@@ -1,0 +1,85 @@
+.pt_gift-registry {
+	.create-new-registry {
+		margin: 1em 0;
+		button {
+			float: left;
+			margin-right: 2em;
+		}
+		p {
+			font-family: $serif;
+			font-size: 1.3em;
+			font-style: italic;
+			margin: 0;
+			padding: 0.5em 2em;
+		}
+	}
+	.add-gift-cert {
+		border: 1px solid $white-smoke;
+		margin-bottom: -1px;
+		overflow: auto;
+		padding: 10px;
+		p {
+			color: $nobel;
+			font-style: italic;
+			line-height: 1.5em;
+		}
+	}
+	.hdr-options {
+		width: 5%;
+	}
+}
+
+.page-content-tab-navigaton button {
+	background: none repeat scroll 0 0 $gainsboro;
+	border-color: $white-smoke;
+	border-width: 1px;
+	color: $nobel;
+	font-family: $serif;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0 0 -1px;
+	&.selected {
+		background: none repeat scroll 0 0 $white;
+		border-bottom: 1px solid $white;
+	}
+}
+
+.page-content-tab-wrapper {
+	border: 1px solid $white-smoke;
+	padding: 5px;
+}
+
+.gift-reg-purchases {
+	.item-purchased-by {
+		dd {
+			float: left;
+			font-weight: bold;
+			margin: 0 1em 0 0;
+			position: relative;
+			width: auto;
+		}
+		dt {
+			clear: both;
+			float: left;
+			margin: 0 1em 0 0;
+			position: relative;
+			width: auto;
+		}
+	}
+	.quantity-purchased {
+		color: $sangria;
+	}
+}
+
+.gift-registry-advanced {
+	clear: both;
+	.toggle-content {
+		display: none;
+		overflow: hidden;
+		padding: 1em 0;
+	}
+	.event-month, .event-city {
+		clear: both;
+	}
+}

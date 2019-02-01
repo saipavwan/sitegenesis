@@ -1,0 +1,352 @@
+button,
+.button,
+.buttonstyle,
+input[type="button"] {
+	background: none repeat scroll 0 0 $white;
+	border-color: $very-light-gray;
+	border-style: solid;
+	border-width: 1px 1px 4px;
+	color: $pacific-blue;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: 700;
+	padding: 0.6em 2em 0.5em;
+	text-align: center;
+}
+
+button[disabled],
+input[disabled] {
+	color: $very-light-gray;
+}
+
+.button-fancy-small {
+	background: url("../images/interface/ui-wht-tran-grad-52.png") repeat-x scroll 0 0 $pacific-blue;
+	color: $white !important;
+	font-size: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.button-fancy-medium {
+	background: url("../images/interface/ui-wht-tran-grad-52.png") repeat-x scroll 0 0 $pacific-blue;
+	color: $white !important;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.button-fancy-large {
+	background: url("../images/interface/ui-wht-tran-grad-52.png") repeat-x scroll 0 0 $pacific-blue;
+	color: $white !important;
+	font-size: 1.75em;
+	font-weight: 400;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+}
+
+.button-fancy-small[disabled],
+.button-fancy-medium[disabled],
+.button-fancy-large[disabled] {
+	opacity: 0.5;
+}
+
+.button-text {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-weight: 400;
+	padding: 0;
+}
+
+.button-full-width {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.js .simple-submit {
+	display: none;
+}
+
+legend {
+	background: url("../images/interface/icon-double-line-header.png") repeat-x scroll left top $white-smoke;
+	border-bottom: 1em solid $white;
+	font-size: 1.1em;
+	font-weight: 700;
+	margin: 0;
+	padding: 14px 2% 10px;
+	position: relative;
+	text-transform: uppercase;
+	width: 96%;
+	.ie7 & {
+		width: 94%;
+	}
+	span {
+		font-size: 12px;
+		font-weight: 400;
+		position: relative;
+		text-transform: none;
+		padding: 0 .5;
+		em {
+			color: $night-rider;
+		}
+	}
+}
+
+.dialog-required {
+	font-size: 12px;
+	font-weight: 400;
+	position: relative;
+	float: right;
+	padding: 2px 0;
+	em {
+		color: $night-rider;
+	}
+}
+
+label {
+	display: block;
+	float: left;
+	font-size: 1.1em;
+	font-weight: 700;
+	padding: 0.75em 0 0;
+	text-align: right;
+	width: 22%;
+}
+
+.form-label-text {
+	display: block;
+	float: left;
+	font-size: 1.1em;
+	font-weight: 700;
+	padding: 0.75em 0 0;
+	text-align: right;
+	width: 22%;
+	span {
+		margin-right: 5px;
+	}
+}
+
+.form-row {
+	clear: both;
+	margin: 0 0 1em;
+}
+
+.form-row-button {
+	margin-left: 24.5%;
+	width: 62%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+	border: 1px solid $dark-gray;
+	margin-left: 2%;
+	padding: 0.7em 0.5em;
+	text-indent: 0;
+	width: 49.5966%;
+}
+
+
+textarea {
+	border: 1px solid $dark-gray;
+	margin-left: 2%;
+	padding: 0.7em 0.5em;
+	text-indent: 0;
+	width: 49.5966%;
+}
+
+select {
+	text-indent: 0;
+	margin-left: 2%;
+	width: 51.6%;
+}
+
+.search-result-options select {
+	height: auto;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin: 1em 2%;
+}
+
+.label-inline {
+	label {
+		display: inline-block;
+		float: none;
+		font-size: 1em;
+		font-weight: 400;
+		text-align: left;
+		width: 90%;
+	}
+	input {
+		float: left;
+		margin: 0.8em 2%;
+	}
+}
+
+.label-above {
+	label {
+		float: none;
+		text-align: left;
+		width: auto;
+	}
+	input, select, textarea {
+		margin-left: 0;
+	}
+	.form-caption {
+		margin-left: 0;
+		width: auto;
+	}
+}
+
+.label-removed label {
+	left: -999em;
+	position: absolute;
+}
+
+.label-hidden label {
+	text-align: left;
+	text-indent: -999em;
+}
+
+.form-indent {
+	margin-left: 24%;
+	.form-caption {
+		margin-left: 0;
+	}
+}
+
+.form-caption {
+	display: block;
+	margin: 1% 0 1% 24%;
+	width: auto;
+}
+
+.error-message {
+	border: 2px solid $sangria;
+	background-color: $tutu;
+	padding: 0.7em 0.5em;
+	text-indent: 0;
+	width: 49.5966%;
+}
+
+.error {
+	background-color: $tutu;
+	border-color: $sangria;
+	color: $sangria;
+}
+
+span.error {
+	background: none repeat scroll 0 0 transparent;
+	display: block;
+	margin: 1% 2% 2% 24%;
+}
+
+div.error {
+	background: none repeat scroll 0 0 transparent;
+}
+
+.error-form {
+	background: url("../images/interface/icon-alert.png") no-repeat scroll left top transparent;
+	color: $sangria;
+	margin: 1em 0;
+	padding: 0.5em 0 0 4em;
+}
+
+.form-inline {
+	form {
+		padding: 0 0 2em;
+		width: 98%;
+	}
+	.form-row {
+		clear: none;
+		float: left;
+		margin: 5px 2% 0 0;
+		width: 28%;
+	}
+	label {
+		padding: 0 0 0.75em;
+		text-transform: uppercase;
+		width: auto;
+	}
+	input[type="text"], select {
+		margin-left: 0;
+		width: 95%;
+	}
+	.form-row-button {
+		float: left;
+		margin: 30px 0 0;
+		width: 10%;
+	}
+	button {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+}
+
+.login-box-content {
+	label {
+		float: none;
+		font-size: 1.1em;
+		text-align: left;
+		width: auto;
+	}
+	input {
+		&[type="text"], &[type="password"] {
+			margin-left: 0;
+			width: 87%;
+		}
+	}
+	textarea {
+		margin-left: 0;
+		width: 87%;
+	}
+	.form-caption, input[type="checkbox"], select {
+		margin-left: 0;
+	}
+	.form-row-button {
+		margin-left: 0;
+		width: auto;
+	}
+}
+
+.row-inline {
+	display: inline;
+	label {
+		width: auto;
+	}
+}
+
+.require-dialog {
+	font-weight: 400;
+	position: absolute;
+	right: 1em;
+	text-transform: none;
+	top: 1em;
+}
+
+.required-indicator {
+	color: $pacific-blue;
+}
+
+.form-field-tooltip {
+	float: right;
+	margin: -36px 0 0;
+	width: 21%;
+}
+
+.with-helper-text {
+	margin-top: -59px;
+}
+
+.char-count {
+	display: block;
+	margin-left: 24%;
+}
+
+.label-inline label {
+  padding: 0;
+  padding-left: 0.25em;
+}

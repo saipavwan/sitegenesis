@@ -1,0 +1,184 @@
+#secondary a {
+	color: $pacific-blue;
+}
+
+#category-level-1 {
+	a {
+		&.refinement-link {
+			background: none repeat scroll 0 0 transparent;
+			padding: 0 0 0 10px;
+		}
+		&.active {
+			font-weight: bold;
+		}
+	}
+	li {
+		&.expandable {
+			background: url("../images/interface/icon-category-expand-off.png") no-repeat scroll 2px 5px transparent;
+		}
+		&.active {
+			background-position: -490px 5px;
+		}
+	}
+}
+
+#category-level-2 {
+	a {
+		&.active {
+			color: $black;
+			font-family: $serif;
+			font-style: italic;
+			font-weight: normal;
+		}
+		&.refinement-link {
+			margin: 0 0 0 6px;
+			padding: 0;
+		}
+	}
+	li {
+		&.expandable {
+			background: url("../images/interface/icon-refine-link-arrow.png") no-repeat scroll left 6px transparent;
+		}
+		&.active {
+			background-position: left -47px;
+			color: $black;
+			font-family: $serif;
+			font-style: italic;
+		}
+	}
+}
+
+#category-level-3 {
+	padding: 5px 0 0;
+	a {
+		&.refinement-link {
+			font-style: normal;
+			margin: 0 0 0 15px;
+			padding: 0;
+		}
+		&.active {}
+	}
+}
+
+.refinement {
+	position: relative;
+}
+
+.refinement-header {
+	background: url("../images/interface/icon-double-line-header.png") repeat-x scroll left top $white-smoke;
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	margin: 0;
+	padding: 14px 9px 9px;
+	text-transform: uppercase;
+}
+
+.refinement h3 {
+	background: url("../images/interface/icon-double-line-header.png") repeat-x scroll left top $white-smoke;
+	font-size: 1.1em;
+	letter-spacing: 1.5px;
+	margin: 0;
+	padding: 14px 9px 9px;
+	text-transform: uppercase;
+	.ie7 & {
+		clear: both;
+	}
+}
+
+.refinement {
+	h3 {
+		span {
+			background: url("../images/interface/icon-refinement-block-arrow.png") no-repeat scroll left -87px transparent;
+			padding: 0 0 0 20px;
+		}
+		&.expanded span {
+			background-position: left top;
+		}
+	}
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 8px 7px 5px;
+	}
+	li {
+		padding: 3px 2px 5px 5px;
+	}
+	ul {
+		&.swatches li {
+			float: left;
+			padding: 2px;
+			a {
+				border: 2px solid $gainsboro;
+				border-radius: 6px 6px 6px 6px;
+				display: block;
+				padding: 0.2em 0.8em;
+			}
+			&.selected a {
+				border-color: $pacific-blue;
+				font-weight: bold;
+			}
+			&.unselectable a {
+				background-image: url("../images/interface/icon-color-swatch-unselectable.png");
+				background-position: right top;
+			}
+		}
+		&.Color li a {
+			height: 23px;
+			padding: 0;
+			text-indent: -999em;
+			width: 30px;
+		}
+	}
+	.clear-refinement {
+		position: absolute;
+		right: 0.7em;
+		top: 1.1em;
+	}
+	.refinement-link {
+		background: url("../images/interface/icon-refine-link-check.png") no-repeat scroll left top transparent;
+		border: 0 none;
+		padding: 0 0 0 1.5em;
+	}
+	.selected .refinement-link {
+		background-position: left bottom;
+	}
+	.refinement-top-level {
+		padding: 12px;
+	}
+}
+
+.scrollable {
+	height: 10em;
+	overflow: auto;
+}
+
+.nav {
+	ul {
+		border: 0 none;
+		list-style: none outside none;
+		margin: 7px 0;
+		padding: 0;
+		li {
+			list-style: none outside none !important;
+			margin: 0 0 7px !important;
+		}
+	}
+	.toggle {
+		background: url("../images/interface/icon-toggle-arrow.png") no-repeat scroll left 12px transparent;
+		border: 0 none;
+		display: block;
+		font-size: 1em;
+		font-weight: 700;
+		margin: 10px 0 7px;
+		padding: 8px 0 0 15px;
+		text-transform: uppercase;
+	}
+	.expanded {
+		background-position: left -96px;
+	}
+	.toggle span {
+		background: none repeat scroll 0 0 transparent;
+	}
+}

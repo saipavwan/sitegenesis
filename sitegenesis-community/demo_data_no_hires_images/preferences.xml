@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
+    <standard-preferences>
+        <all-instances>
+            <preference preference-id="ActiveLocales">en_CA:de:default:en_US:fr:de_DE:fr_CA:en:es:nl</preference>
+            <preference preference-id="CustomCartridges">bm_custom_plugin</preference>
+            <preference preference-id="CustomProductListColumns">custom.color:custom.refinementColor</preference>
+            <preference preference-id="InstanceTimezone">US/Eastern</preference>
+        </all-instances>
+        <development/>
+        <staging/>
+        <production/>
+    </standard-preferences>
+    <custom-preferences>
+        <all-instances/>
+        <development/>
+        <staging/>
+        <production/>
+    </custom-preferences>
+</preferences>
+

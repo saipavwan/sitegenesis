@@ -1,0 +1,12 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<iscomment> TEMPLATENAME: functions.isml </iscomment>
+
+<iscomment>  Function for filtering DOM id's removing white spaces. Only characters allowed are "A-Z" "a-z" "0-9" "-" and "_" </iscomment>
+<isscript>
+	function cleanupID(s) {
+		if(s!=null)
+			return s.replace( new RegExp( "[^a-z0-9_\-]", "gi" ), "_" );
+		else
+			return s;	
+	}
+</isscript>

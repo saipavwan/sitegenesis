@@ -1,0 +1,51 @@
+.shippingaddress {
+	.select-address {
+		width: 100%;
+		margin-left: 0;
+	}
+	.edit-address {
+		margin-top: 0.5em;
+	}
+}
+
+.formactions {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.item-list .multi-shipment-row {
+	border-bottom: none;
+}
+
+.minishipments-method {
+	padding-top: 10px;
+}
+
+.multishipprogress {
+	div, .step-3 {
+		background: url("../images/interface/icon-checkout-indicator.png") no-repeat scroll right center transparent;
+		display: inline;
+		padding: 1em;
+	}
+	.step-4 {
+		background: none repeat scroll 0 0 transparent;
+		padding-right: 0;
+	}
+}
+
+.checkout-progress-indicator {
+	font-size: 1em;
+	div {
+		padding: 20px;
+	}
+}
+
+.checkout-multi-shipping .cart-row .gift-message-text {
+	display: none;
+}
+
+.pt_checkout #cart-table .cart-row .shipment-label {
+	font-weight: 700;
+	margin-top: 35px;
+	font-size: 1.4em;
+}

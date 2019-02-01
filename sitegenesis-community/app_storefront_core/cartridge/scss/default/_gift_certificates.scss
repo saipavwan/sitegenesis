@@ -1,0 +1,73 @@
+.gift-certificate-purchase {
+	background: none repeat scroll 0 0 $white-smoke;
+	padding: 10px;
+	.content-asset {
+		float: left;
+		width: 50%;
+		img {
+			margin: 20px 0;
+		}
+	}
+	form {
+		background: none repeat scroll 0 0 $white;
+		float: right;
+		padding: 0 20px 20px;
+		width: 40%;
+		.input-text, .input-textarea {
+			width: 90%;
+		}
+		.cert-amount {
+			clear: none;
+			float: left;
+			margin: 0;
+			width: 40%;
+		}
+		.form-row-button {
+			clear: none;
+			float: left;
+			margin: 25px 0 0 20px;
+			width: 50%;
+		}
+	}
+	.cert-amount {
+		.form-caption {
+			margin: 20px 0 0;
+			position: absolute;
+			width: 40%;
+		}
+		&.error {
+			padding-bottom: 35px;
+		}
+	}
+	span.error {
+		margin-left: 2%;
+	}
+}
+
+.check-balance {
+	border-bottom: 1px solid $gainsboro;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+}
+
+.gift-cert-balance {
+	float: left;
+	width: 40%;
+	input {
+		margin-top: 0;
+		width: 90%;
+	}
+	.form-caption {
+		margin-left: 0;
+	}
+}
+
+.gift-cert-balance-submit {
+	padding-top: 13px;
+	clear: none;
+	float: left;
+}
+
+.gift-cert-balance .label {
+	display: none;
+}

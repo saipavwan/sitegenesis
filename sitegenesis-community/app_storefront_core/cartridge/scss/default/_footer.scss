@@ -1,0 +1,32 @@
+#footer {
+	background: url("../images/interface/icon-double-line-header.png") repeat-x scroll left top transparent;
+	clear: both;
+	font-size: 0.9em;
+	padding: 2em 0.5em;
+	text-align: center;
+	.menu-footer {
+		float: none;
+		margin: 1em 0;
+		padding: 0;
+		text-align: center;
+		text-transform: uppercase;
+		li {
+			display: inline;
+			float: none;
+			padding: 0 0.5em;
+		}
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.copyright {
+	color: $nobel;
+}
+
+.postscript {
+	color: $nobel;
+	font-family: $serif;
+	font-style: italic;
+}

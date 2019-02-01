@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coupons xmlns="http://www.demandware.com/xml/impex/coupon/2008-06-17">
+    <coupon coupon-id="shipping">
+        <description>coupon used with shipping promotions</description>
+        <enabled-flag>false</enabled-flag>
+        <single-code>shipping</single-code>
+    </coupon>
+
+</coupons>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shipping xmlns="http://www.demandware.com/xml/impex/shipping/2007-03-31">
+    <shipping-method method-id="004" default="false">
+        <display-name xml:lang="x-default">Super Saver</display-name>
+        <description xml:lang="x-default">Super Saver Delivery (arrives in 3-7 business days)</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0">0</amount>
+            <amount order-value="0.01">1.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronic-games</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>100.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-products>
+            <included-products>
+                <condition-group>
+                    <category-condition catalog-id="storefront-catalog-en">
+                        <category-id>newarrivals</category-id>
+                        <category-id>womens</category-id>
+                        <category-id>mens</category-id>
+                        <category-id>hidden</category-id>
+                        <category-id>electronics-televisions</category-id>
+                        <category-id>electronics-digital-cameras</category-id>
+                        <category-id>electronics-digital-media-players</category-id>
+                        <category-id>electronics-gps-units</category-id>
+                        <category-id>electronics-game-consoles</category-id>
+                    </category-condition>
+                </condition-group>
+            </included-products>
+        </excluded-products>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="005" default="false">
+        <display-name xml:lang="x-default">Store Pickup</display-name>
+        <description xml:lang="x-default">Store Pickup</description>
+        <online-flag>true</online-flag>
+        <price-table>
+            <amount order-value="0">0</amount>
+        </price-table>
+        <custom-attributes>
+		<custom-attribute attribute-id="storePickupEnabled">true</custom-attribute>
+        </custom-attributes>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="EUR005" default="false">
+        <display-name xml:lang="x-default">EUR Store Pickup</display-name>
+        <description xml:lang="x-default">EUR Store Pickup</description>
+        <online-flag>true</online-flag>
+        <price-table>
+            <amount order-value="0">0</amount>
+        </price-table>
+        <custom-attributes>
+            <custom-attribute attribute-id="storePickupEnabled">true</custom-attribute>
+        </custom-attributes>
+        <currency>EUR</currency>
+    </shipping-method>
+
+    <shipping-method method-id="001" default="true">
+        <display-name xml:lang="x-default">Ground</display-name>
+        <description xml:lang="x-default">Order received within 7-10 business days</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0">0</amount>
+            <amount order-value="0.01">5.99</amount>
+            <amount order-value="100">7.99</amount>
+            <amount order-value="200">9.99</amount>
+            <amount order-value="500">15.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronics-televisions</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>25.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>womens-jewelry</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>10.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="002" default="false">
+        <display-name xml:lang="x-default">2-Day Express</display-name>
+        <description xml:lang="x-default">Order received in 2 business days</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0">0</amount>
+            <amount order-value="0.01">9.99</amount>
+            <amount order-value="100">11.99</amount>
+            <amount order-value="200">15.99</amount>
+            <amount order-value="500">20.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronics-televisions</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>25.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="003" default="false">
+        <display-name xml:lang="x-default">Overnight</display-name>
+        <description xml:lang="x-default">Order received the next business day</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0">0</amount>
+            <amount order-value="0.01">15.99</amount>
+            <amount order-value="100">19.99</amount>
+            <amount order-value="200">21.99</amount>
+            <amount order-value="500">29.99</amount>
+        </price-table>
+        <excluded-products>
+            <included-products>
+                <condition-group>
+                    <category-condition catalog-id="storefront-catalog-en">
+                        <category-id>electronics-televisions</category-id>
+                    </category-condition>
+                </condition-group>
+            </included-products>
+        </excluded-products>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="012" default="false">
+        <display-name xml:lang="x-default">Express</display-name>
+        <description xml:lang="x-default">Orders shipped outside continental US received in 2-3 business days</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0">0</amount>
+            <amount order-value="0.01">16.99</amount>
+            <amount order-value="100">22.99</amount>
+            <amount order-value="200">28.99</amount>
+            <amount order-value="500">34.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronics-televisions</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>25.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="any">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-not-equal</operator>
+                        <string>AB</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="021" default="false">
+        <display-name xml:lang="x-default">USPS</display-name>
+        <description xml:lang="x-default">Order shipped by USPS received within 7-10 business days</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0">0</amount>
+            <amount order-value="0.01">5.99</amount>
+            <amount order-value="100">7.99</amount>
+            <amount order-value="200">9.99</amount>
+            <amount order-value="500">15.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronics-televisions</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>25.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-not-equal</operator>
+                        <string>AA</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="1234" default="false">
+        <display-name xml:lang="x-default">Foreign</display-name>
+        <description xml:lang="x-default">Foreign</description>
+        <online-flag>true</online-flag>
+        <base-method>001</base-method>
+        <tax-class-id>exempt</tax-class-id>
+        <price-table>
+            <amount order-value="0">7.99</amount>
+            <amount order-value="14.99">8.99</amount>
+            <amount order-value="24.99">9.99</amount>
+            <amount order-value="29.99">11.99</amount>
+        </price-table>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="any">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.countryCode</attribute-path>
+                        <operator>is-not-equal</operator>
+                        <string>CA</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+
+    <shipping-method method-id="EUR001" default="true">
+        <display-name xml:lang="x-default">Ground</display-name>
+        <description xml:lang="x-default">Order received within 7-10 business days</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0.0">0.0</amount>
+            <amount order-value="0.01">5.99</amount>
+            <amount order-value="100.0">7.99</amount>
+            <amount order-value="200.0">9.99</amount>
+            <amount order-value="500.0">15.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="electronics-catalog">
+                                <category-id>electronics-televisions</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>25.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>womens-jewelry</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>10.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>EUR</currency>
+    </shipping-method>
+    <shipping-method method-id="EUR002" default="false">
+        <display-name xml:lang="x-default">2-Day Express</display-name>
+        <description xml:lang="x-default">Order received in 2 business days</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0.0">0.0</amount>
+            <amount order-value="0.01">9.99</amount>
+            <amount order-value="100.0">11.99</amount>
+            <amount order-value="200.0">15.99</amount>
+            <amount order-value="500.0">20.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronics-televisions</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>0.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>EUR</currency>
+    </shipping-method>
+    <shipping-method method-id="EUR003" default="false">
+        <display-name xml:lang="x-default">Overnight</display-name>
+        <description xml:lang="x-default">Order received the next business day</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0.0">0.0</amount>
+            <amount order-value="0.01">15.99</amount>
+            <amount order-value="100.0">19.99</amount>
+            <amount order-value="200.0">21.99</amount>
+            <amount order-value="500.0">29.99</amount>
+        </price-table>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>EUR</currency>
+    </shipping-method>
+    <shipping-method method-id="EUR004" default="false">
+        <display-name xml:lang="x-default">Super Saver</display-name>
+        <description xml:lang="x-default">Super Saver Delivery (arrives in 3-7 business days)</description>
+        <online-flag>true</online-flag>
+        <tax-class-id>standard</tax-class-id>
+        <price-table>
+            <amount order-value="0.0">0.0</amount>
+            <amount order-value="0.01">1.99</amount>
+        </price-table>
+        <product-cost-groups>
+            <product-cost-group>
+                <products>
+                    <included-products>
+                        <condition-group>
+                            <category-condition catalog-id="storefront-catalog-en">
+                                <category-id>electronics-gaming</category-id>
+                            </category-condition>
+                        </condition-group>
+                    </included-products>
+                </products>
+                <cost-per-item>
+                    <surcharge>100.00</surcharge>
+                </cost-per-item>
+            </product-cost-group>
+        </product-cost-groups>
+        <excluded-addresses>
+            <included-addresses>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>shipment.shippingAddress.stateCode</attribute-path>
+                        <operator>is-equal</operator>
+                        <string>AA</string>
+                        <string>AB</string>
+                        <string>AE</string>
+                        <string>AP</string>
+                        <string>AK</string>
+                        <string>AS</string>
+                        <string>BC</string>
+                        <string>GU</string>
+                        <string>HI</string>
+                        <string>MB</string>
+                        <string>NB</string>
+                        <string>NL</string>
+                        <string>NT</string>
+                        <string>NS</string>
+                        <string>NU</string>
+                        <string>ON</string>
+                        <string>PE</string>
+                        <string>PR</string>
+                        <string>QC</string>
+                        <string>SK</string>
+                        <string>VI</string>
+                        <string>YT</string>
+                    </condition>
+                </condition-group>
+            </included-addresses>
+        </excluded-addresses>
+        <currency>USD</currency>
+    </shipping-method>
+</shipping>

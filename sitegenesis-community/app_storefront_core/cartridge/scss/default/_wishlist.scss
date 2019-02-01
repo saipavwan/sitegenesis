@@ -1,0 +1,44 @@
+.pt_wish-list {
+	.list-table-header {
+		background: url("../images/interface/icon-double-line-header.png") repeat-x scroll left top $white-smoke;
+		overflow: hidden;
+		padding: 2em;
+		p {
+			color: $nobel;
+			float: right;
+			margin: 0;
+			overflow: hidden;
+			width: 40%;
+		}
+	}
+	.primary-content .list-table-header h2 {
+		float: left;
+	}
+}
+
+.list-share {
+	@extend %clearfix;
+	background-color: $white-smoke;
+	border-top: 1px solid darken($white-smoke, 10%);
+	padding: 2em;
+	.share-option {
+		box-sizing: border-box;
+		width: 30%;
+		margin-right: 3.3333333%;
+		float: left;
+		word-wrap: break-word;
+		a {
+			display: block;
+		}
+	}
+	.list-title {
+		float: left;
+	}
+	.print-page {
+		float: right;
+	}
+}
+
+.event-info {
+	margin: 1em;
+}

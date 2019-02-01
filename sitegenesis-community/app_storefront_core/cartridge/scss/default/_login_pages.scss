@@ -1,0 +1,17 @@
+.login-box {
+	background: none repeat scroll 0 0 $gainsboro;
+	margin: 0 0 2em;
+	h3 {
+		margin: 0;
+	}
+}
+
+.login-box-content {
+	padding: 0.5em 1.5em;
+}
+
+#OAuthProvider {
+	display: block;
+	margin-bottom: 1em;
+	width: 80%;
+}

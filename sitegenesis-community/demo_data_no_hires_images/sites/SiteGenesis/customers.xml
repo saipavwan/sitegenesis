@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers xmlns="http://www.demandware.com/xml/impex/customer/2006-10-31">
+    <customer customer-no="S00000005">
+        <credentials>
+            <login>patricia@demandware.com</login>
+            <password encrypted="true">8798b34c03e0d9e2c04ae1601d9b5250</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title>Big Spender</title>
+            <first-name>Patricia</first-name>
+            <second-name/>
+            <last-name>Miller</last-name>
+            <suffix/>
+            <company-name>Demandware</company-name>
+            <job-title/>
+            <email>patricia@demandware.com</email>
+            <phone-home>123-456-789</phone-home>
+            <phone-business>781-756-3700</phone-business>
+            <phone-mobile>123-456-789</phone-mobile>
+            <fax>781-756-3700</fax>
+            <birthday>1900-01-01Z</birthday>
+            <gender>2</gender>
+            <last-login-time>2009-05-26T14:28:06.102Z</last-login-time>
+            <last-visit-time>2009-05-26T14:28:06.102Z</last-visit-time>
+            <preferred-locale/>
+        </profile>
+        <addresses>
+            <address preferred="true" address-id="Home">
+                <salutation>Ms.</salutation>
+                <title/>
+                <first-name>Patricia</first-name>
+                <second-name/>
+                <last-name>Miller</last-name>
+                <company-name/>
+                <job-title/>
+                <address1>313 West 29th Street</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>New York</city>
+                <postal-code>10001</postal-code>
+                <state-code>NY</state-code>
+                <country-code>US</country-code>
+                <phone/>
+            </address>
+            <address preferred="false" address-id="Work">
+                <salutation>Ms.</salutation>
+                <title/>
+                <first-name>Patricia</first-name>
+                <second-name/>
+                <last-name>Miller</last-name>
+                <company-name>Demandware</company-name>
+                <job-title/>
+                <address1>10 Presidential Way</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>Woburn</city>
+                <postal-code>01813</postal-code>
+                <state-code>MA</state-code>
+                <country-code>US</country-code>
+                <phone>781-756-3747</phone>
+            </address>
+        </addresses>
+    </customer>
+
+    <customer customer-no="S00000003">
+        <credentials>
+            <login>dude@demandware.com</login>
+            <password encrypted="true">249dad93cd8ffd0f4f43f0187f9f236d</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation>Ms.</salutation>
+            <title>Unemployed</title>
+            <first-name>Jeff</first-name>
+            <second-name/>
+            <last-name>Lebowski</last-name>
+            <suffix/>
+            <company-name/>
+            <job-title/>
+            <email>dude@demandware.com</email>
+            <phone-home>098-765-4321</phone-home>
+            <phone-business>098-765-4321</phone-business>
+            <phone-mobile>098-765-4321</phone-mobile>
+            <fax>098-765-4321</fax>
+            <birthday>2000-12-31Z</birthday>
+            <gender>1</gender>
+            <preferred-locale/>
+        </profile>
+        <addresses>
+            <address preferred="true" address-id="Rental Unit">
+                <salutation/>
+                <title/>
+                <first-name>The Dude</first-name>
+                <second-name/>
+                <last-name>Lebowski</last-name>
+                <company-name/>
+                <job-title/>
+                <address1>36 Washington Street</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>Los Angeles</city>
+                <postal-code>58769</postal-code>
+                <state-code>MA</state-code>
+                <country-code>US</country-code>
+                <phone/>
+            </address>
+            <address preferred="false" address-id="Bowling Alley">
+                <salutation/>
+                <title>Bowler</title>
+                <first-name>Jeff</first-name>
+                <second-name/>
+                <last-name>Lebowski</last-name>
+                <company-name/>
+                <job-title/>
+                <address1>Lane 10</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>Los Angeles</city>
+                <postal-code>11898</postal-code>
+                <state-code>CA</state-code>
+                <country-code>US</country-code>
+                <phone/>
+            </address>
+        </addresses>
+    </customer>
+
+    <customer customer-no="S00000002">
+        <credentials>
+            <login>samadams@demandware.com</login>
+            <password encrypted="true">e8da0e8cb8b348794dc9946bc411624b</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title>Founder</title>
+            <first-name>Samuel</first-name>
+            <second-name/>
+            <last-name>Adams</last-name>
+            <suffix/>
+            <company-name>Boston Beer Company</company-name>
+            <job-title/>
+            <email>samadams@demandware.com</email>
+            <phone-home>123-456-7890</phone-home>
+            <phone-business>123-456-7890</phone-business>
+            <phone-mobile>123-456-7890</phone-mobile>
+            <fax>123-456-7890</fax>
+            <birthday>1776-07-04Z</birthday>
+            <gender>1</gender>
+            <preferred-locale/>
+        </profile>
+        <addresses>
+            <address preferred="true" address-id="Corporate Headquarters">
+                <salutation>Mr.</salutation>
+                <title>President</title>
+                <first-name>Jim</first-name>
+                <second-name/>
+                <last-name>Koch</last-name>
+                <company-name>Boston Beer Company</company-name>
+                <job-title/>
+                <address1>One Design Center</address1>
+                <address2>Large Building</address2>
+                <suite/>
+                <postbox>PO Box 860</postbox>
+                <city>Boston</city>
+                <postal-code>02210</postal-code>
+                <state-code>MA</state-code>
+                <country-code>US</country-code>
+                <phone>800-456-9056</phone>
+            </address>
+        </addresses>
+    </customer>
+
+    <customer customer-no="S00000004">
+        <credentials>
+            <login>jules@demandware.com</login>
+            <password encrypted="true">7041273d0e0df6325d04dba6ab5be7ce</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title/>
+            <first-name>Jules</first-name>
+            <second-name/>
+            <last-name>Winnfield</last-name>
+            <suffix/>
+            <company-name/>
+            <job-title/>
+            <email>jules@demandware.com</email>
+            <phone-home/>
+            <phone-business>456-789-1234</phone-business>
+            <phone-mobile>456-789-1234</phone-mobile>
+            <fax/>
+            <birthday>1988-08-08Z</birthday>
+            <gender>1</gender>
+            <preferred-locale/>
+        </profile>
+        <addresses>
+            <address preferred="true" address-id="The Car">
+                <salutation>Mr.</salutation>
+                <title>Enforcer</title>
+                <first-name>Jules</first-name>
+                <second-name/>
+                <last-name>Winnfield</last-name>
+                <company-name/>
+                <job-title/>
+                <address1>4840 W.Irlo Bronson Hwy 192</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>Los Angeles</city>
+                <postal-code>34746</postal-code>
+                <state-code>CA</state-code>
+                <country-code>US</country-code>
+                <phone/>
+            </address>
+        </addresses>
+    </customer>
+
+    <customer customer-no="S00000001">
+        <credentials>
+            <login>jg@demandware.com</login>
+            <password encrypted="true">d0d64318f7d984c22f27ba2b9af623c0</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title/>
+            <first-name>James</first-name>
+            <second-name/>
+            <last-name>Gate</last-name>
+            <suffix/>
+            <company-name/>
+            <job-title/>
+            <email>jg@demandware.com</email>
+            <phone-home>123-456-7890</phone-home>
+            <phone-business>123-456-7890</phone-business>
+            <phone-mobile>123-456-7890</phone-mobile>
+            <fax/>
+            <birthday>1976-09-14Z</birthday>
+            <gender>1</gender>
+            <preferred-locale/>
+        </profile>
+        <addresses>
+            <address preferred="true" address-id="Boston, MA (Home)">
+                <salutation>Mr.</salutation>
+                <title/>
+                <first-name>James</first-name>
+                <second-name/>
+                <last-name>Gate</last-name>
+                <company-name/>
+                <job-title/>
+                <address1>5 McBride Street</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>Jamaica Plain</city>
+                <postal-code>01230</postal-code>
+                <state-code>MA</state-code>
+                <country-code>US</country-code>
+                <phone/>
+            </address>
+        </addresses>
+    </customer>
+
+</customers>

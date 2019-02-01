@@ -1,0 +1,98 @@
+.item-list {
+	margin-bottom: 1em;
+	tr {
+		border-bottom: 1px solid $gainsboro;
+		&.last {
+			border: 0 none;
+		}
+		&.headings {
+			display: none;
+		}
+	}
+	td {
+		padding: 1em;
+		vertical-align: top;
+	}
+}
+
+.section-header {
+	padding: 1em;
+}
+
+.item-details .product-list-item {
+	.name {
+		font-family: $serif;
+		font-size: 1.2em;
+		font-style: italic;
+	}
+	.value {
+		font-weight: 700;
+	}
+	.promo {
+		color: $sangria;
+	}
+	.price-standard {
+		color: $nobel;
+		text-decoration: line-through;
+	}
+}
+.item-availability ul,
+.item-quantity-details ul {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.item-dashboard {
+	color: $dark-gray;
+	width: 250px;
+	label {
+		display: inline;
+		float: none;
+		font-weight: 400;
+	}
+	input,
+	.value,
+	.option-toggle-public label {
+		color: $night-rider;
+	}
+	input {
+		padding: 0.2em;
+		width: 2em;
+	}
+	.input-text {
+		margin: 0;
+		text-align: center;
+	}
+	.input-select {
+		margin: 0;
+		padding: 8px;
+		width: auto;
+		height:auto;
+		color: $night-rider;
+	}
+	.input-checkbox {
+		margin: 0 5px;
+	}
+	.item-option {
+		margin: 0 0 0.5em;
+		.form-row {
+			display: inline;
+		}
+	}
+	.option-add-to-cart {
+		.label, label {
+			color: $night-rider;
+			font-size: 1.1em;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		input {
+			padding: 0.5em 0;
+			width: 50px;
+			margin-right: 1em
+		}
+	}
+	.option-quantity-purchased span.exceeded {
+		color: $sangria;
+	}
+}

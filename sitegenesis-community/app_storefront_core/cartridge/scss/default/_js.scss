@@ -1,0 +1,47 @@
+.js {
+	.loader {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.loader-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: $white;
+		opacity: 0.7;
+	}
+	.loader-indicator {
+		z-index: 100;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 64px;
+		height: 64px;
+		background: url("../images/loading-small.gif") no-repeat;
+	}
+	#quickviewbutton {
+		background: transparent url(../images/quickview.gif) center center no-repeat;
+		display: none;
+		position: absolute;
+		top: 50%;
+		top: 0\9;
+		width: 100%;
+		width: 200px\9;
+		height: 17px;
+		height: 225px\9;
+		padding: 10px 0;
+		padding: 0px\9;
+		left: 0\9;
+	}
+	.ie7 #quickviewbutton {
+		position: absolute;
+		left: 0;
+		width: 200px;
+	}
+	.product-image:hover #quickviewbutton {
+		display: block;
+	}
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+	<title>Unit Browser Test | SiteGenesis</title>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<style type="text/css">
+		.grid-tile {
+			float: left;
+			list-style: none;
+			margin-right: 2em;
+			width: 26%;
+		}
+		#quickviewbutton {
+			display: block;
+			width: 100%;
+			height: 17px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="tiles-container">
+		<li class="grid-tile">
+			<div class="product-tile">
+				<div class="product-image">
+					<a class="thumb-link" href="http://demandware-sandbox.com/s/SiteGenesis/mens/clothing/dress%20shirts/25604455.html" title="No-Iron Textured Dress Shirt">
+						<img src="http://placehold.it/195/f54312/fff&text=No-Iron+Textured+Dress+Shirt" alt="No-Iron Textured Dress Shirt, White, medium" title="No-Iron Textured Dress Shirt, White">
+					</a>
+				</div>
+			</div>
+		</li>
+		<li class="grid-tile">
+			<div class="product-tile">
+				<div class="product-image">
+					<a class="thumb-link" href="http://demandware-sandbox.net/s/SiteGenesis/electronics/televisions/flat%20screen/sony-kdl-19m4000.html" title="Sony Bravia® M-Series 19&quot; LCD High Definition Television">
+						<img src="http://placehold.it/195/d74f94/000&text=Sony+Bravia" alt="Sony Bravia® M-Series 19&quot; LCD High Definition Television, , medium" title="Sony Bravia® M-Series 19&quot; LCD High Definition Television, ">
+					</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		window.Resources = {};
+		$.fn.syncHeight = function () {
+			var arr = $.makeArray(this);
+			arr.sort(function (a, b) {
+				return $(a).height() - $(b).height();
+			});
+			return this.height($(arr[arr.length - 1]).height());
+		};
+	</script>
+	<script type="text/javascript" src="./dist/product-tile.js"></script>
+</body>

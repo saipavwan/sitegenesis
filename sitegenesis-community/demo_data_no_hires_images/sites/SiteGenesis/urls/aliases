@@ -1,0 +1,81 @@
+{
+	/* 
+	 *
+	 * The file is used to configure host names for a site.
+	 *
+	 * Please remove all comments before installing this file!
+	 *
+	 * Go to http://www.jsonlint.com/ to validate our file.
+	 * 
+	 */
+   
+	/*	
+	 *  __version must be set to "1"	
+	 */
+	
+	"__version" : "1",
+	
+	/*
+	 * Settings section is used to configure main HTTP and HTTPS hostnames for a site.
+	 *  
+	 */
+	"settings" : {
+		// "http-host" : "www.sitegenesis.com",
+		// "https-host" : "secure.sitegenesis.com"
+	},
+	
+
+	/*	
+	 * Host name definitions. 
+	 * The following section allows to define additional hostnames associated with the site.
+	 * With each hostname it is possible to define set of redirect rules.  
+	 *
+	 */
+	 
+	/*
+	 * Examples
+	 */
+	  
+	/*
+	 * Host redirect from sitegenesis.com to www.sitegesis.com.
+	 * All URLs coming to sitegenesis.com (http://sitegenesis.com/*) will be permanently redirected (301) to www.sitegenesis.com
+	 *  
+	 *	"sitegenesis.com": [
+	 *      {
+	 *        "host": "www.sitegenesis.com"
+	 *		}
+	 *  ],
+	 */
+    
+	/*
+	 * Host redirect to specific pipeline.
+	 * Hostname-only URL (e.g. http://electronics.sitegenesis.com/) will result in a call of Search-Show pipeline.    
+	 *
+	 *	"electronics.sitegenesis.com": [
+	 *      {
+	 *        "pipeline": "Search-Show",
+	 *        "params" : {"cgid":"electronics"}
+	 *		}
+	 *  ],
+	 */
+
+
+	/*
+	 * Host redirect based on user agent header.
+	 * With each rule it is possible to associate precondition based on content of "user-agent" http header.
+	 * In the example below an HTTP requests with "User-Agent" header containing "iphone" or "ipod" will be redirected (301) to apple.sitegenesis.com
+	 * and those with "blackberry" to bb.sitegenesis.com.      
+	 *
+	 *	"www.sitegenesis.com": [
+	 *     	{
+	 *        "if-agent-contains": ["iphone","ipod"],
+	 *        "host": "apple.sitegenesis.com"
+	 *	   	},
+	 *     	{
+	 *        "if-agent-contains": ["blackberry"],
+	 *        "host": "bb.sitegenesis.com"
+	 *		}
+	 *  ]
+	 */
+ 
+}

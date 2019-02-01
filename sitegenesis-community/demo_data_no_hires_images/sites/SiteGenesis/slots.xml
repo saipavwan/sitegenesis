@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slot-configurations xmlns="http://www.demandware.com/xml/impex/slot/2008-09-08">
+    <slot-configuration slot-id="minicart-banner" context="global" configuration-id="10%offorderover$150" assigned-to-site="true">
+        <description>10% off any order with a purchase of over $150</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <schedule>
+            <recurrence>
+                <time-of-day>
+                    <time-from>21:00:00.000Z</time-from>
+                    <time-to>08:59:00.000Z</time-to>
+                </time-of-day>
+            </recurrence>
+        </schedule>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;div class="minicartslot"&gt;
+&lt;p style="padding: 0px 10px;"&gt;10% off any order with a purchase of over $150&lt;/p&gt;
+&lt;/div&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="404-banner" context="global" configuration-id="404 banner" assigned-to-site="true">
+        <template>slots/content/giftcertificates.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="404-banner"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cart-banner" context="global" configuration-id="Global cart slot" assigned-to-site="true">
+        <description>Global cart slot</description>
+        <template>slots/product/horizontalcarousel.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <callout-msg xml:lang="en-US">Take a look at one of these!</callout-msg>
+        <content>
+            <products>
+                <product product-id="008884304085"/>
+                <product product-id="008885004854"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-scarves" configuration-id="New Slot Configuration - 2011-11-01 20:04:36" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-scarves"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="search-promo" context="global" configuration-id="New Slot Configuration - 2011-11-14 09:51:41" assigned-to-site="true">
+        <template>slots/content/homepage/home-bottom-slot.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="search-promo1"/>
+                <content-asset content-id="search-promo2"/>
+                <content-asset content-id="search-promo3"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-bottom-center" context="global" configuration-id="New Slot Configuration - 2012-02-07 15:52:46" assigned-to-site="false">
+        <description>test of this</description>
+        <template>slots/product/product_1x2.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <callout-msg xml:lang="x-default">Hey look at this</callout-msg>
+        <content>
+            <products>
+                <product product-id="008884304016"/>
+                <product product-id="008884304023"/>
+                <product product-id="008884304030"/>
+                <product product-id="008884304047"/>
+                <product product-id="008884304054"/>
+                <product product-id="008884304061"/>
+                <product product-id="008884304085"/>
+                <product product-id="008884304078"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cart-footer" context="global" configuration-id="CartFooterFeatured" assigned-to-site="true">
+        <description>Featured Products that display in the footer of the cart page, below the cart-actions buttons.</description>
+        <template>slots/product/product_listing.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <callout-msg xml:lang="x-default">Featured Products</callout-msg>
+        <content>
+            <products>
+                <product product-id="008884303989"/>
+                <product product-id="008884303996"/>
+                <product product-id="008884304047"/>
+                <product product-id="008884304054"/>
+                <product product-id="008884304085"/>
+                <product product-id="008885004533"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="404-promo" context="global" configuration-id="Promo Zune" default="true" assigned-to-site="true">
+        <description>Free Microsoft Zune With Purchase Of $500 Or More In Electronics</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p style="margin:10px 0 0 0"&gt;&lt;img height="139" width="350" alt="Free Microsoft Zune With Purchase Of $500 Or More In Electronics" src="images/slot/404-promo-zune.jpg?$staticlink$" /&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="error-promo" context="global" configuration-id="Zune Promo Image" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p style="margin:10px 0 0 0"&gt;&lt;img height="139" width="350" alt="Free Microsoft Zune With Purchase Of $500 Or More In Electronics" src="images/slot/404-promo-zune.jpg?$staticlink$" /&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="account-banner" context="global" configuration-id="Account Banner" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default"></body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="registry-header" context="global" configuration-id="Registry Header" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default"></body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="error-banner" context="global" configuration-id="Error Banner" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default"></body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="placeorder-slot" context="global" configuration-id="Placeorder Slot" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default"></body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="wishlist-banner" context="global" configuration-id="Wishlist Banner" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default"></body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="folder-main-slot" context="folder" context-id="about-us" configuration-id="New Slot Configuration - 2014-12-31 11:14:21" default="true" assigned-to-site="false">
+        <description>default slot for about us page</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;div class="folder-slot"&gt;
+    &lt;h2&gt;
+        About Demandware
+    &lt;/h2&gt;
+    &lt;p&gt;
+It all started with a series of observations: eCommerce merchandising and marketing innovation is what generates the revenue, yet most operations are spending 80% of their budgets simply maintaining current infrastructure. The pace of ecommerce accelerates daily, yet most operations are scrambling to stand still. Merchandisers and marketers are supremely frustrated, spending more time chasing outsourced providers and internal IT organizations, than actually merchandising and marketing their own businesses. There had to be a better way.
+    &lt;/p&gt;
+&lt;/div&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="folder-main-slot" context="folder" context-id="customer-service" configuration-id="New Slot Configuration - 2014-12-31 11:43:32" default="true" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;div class="folder-slot"&gt;
+&lt;h2&gt;
+Customer Service
+&lt;/h2&gt;
+&lt;p&gt;
+Here you will find answers to your questions about shopping at our online store, your order, payment options and more. Simply select from the categories below for you complete information.
+&lt;/p&gt;
+&lt;/div&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="noresult-banner" context="global" configuration-id="Noresult Banner" assigned-to-site="false">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default"></body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-televisions-flat-screen" configuration-id="banner-Electronics-Televisions-Flat Screen" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$httpUrl('Page-Show', 'cid', 'buying-guide-tv')$"&gt;&lt;img height="138" width="752" src="images/slot/sub_banners/electronics-televisionsbuyingguide.jpg?$staticlink$" alt="Link to Television Buying Guide" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-televisions-tv_dvd-combo" configuration-id="banner-Electronics-Televisions-TVDVDCombo" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$httpUrl('Page-Show', 'cid', 'buying-guide-tv')$"&gt;&lt;img height="138" width="752" src="images/slot/sub_banners/electronics-televisionsbuyingguide.jpg?$staticlink$" alt="Link to Television Buying Guide" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronic-games" configuration-id="banner-electronic-games" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Product-Show', 'pid', 'easports-madden-nfl-09-wii')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/electronics-gaming-madden.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-digital-media-players" configuration-id="banner-electronics-digital-media-players" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="electronics-digital-media-players"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-game-consoles" configuration-id="banner-electronics-game-consoles" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Product-Show', 'pid', 'sony-ps3-bundle')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/electronics-gaming.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-gaming" configuration-id="banner-electronics-gaming" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Product-Show', 'pid', 'sony-ps3-bundle')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/electronics-gaming.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-gps-units" configuration-id="banner-electronics-gps-units" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="electronics-gps-units"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-televisions-projection" configuration-id="banner-electronics-televisions-projection" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$httpUrl('Page-Show', 'cid', 'buying-guide-tv')$"&gt;&lt;img height="138" width="752" src="images/slot/sub_banners/electronics-televisionsbuyingguide.jpg?$staticlink$" alt="Link to Television Buying Guide" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-digital-cameras" configuration-id="banners-electronics-digital-cameras" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="electronics-digital-cameras"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="electronics-televisions" configuration-id="banners-electronics-televisions" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$httpUrl('Page-Show', 'cid', 'buying-guide-tv')$"&gt;&lt;img height="138" width="752" alt="Link to Television Buying Guide" src="images/slot/sub_banners/electronics-televisions.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-luggage" configuration-id="banners-mens-accessories-luggage" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-accessories-luggage"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories" configuration-id="banners-womens-accessories" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-gloves" configuration-id="banners-womens-accessories-gloves" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Stores-Find')$"&gt;&lt;img height="138" width="752" src="images/slot/sub_banners/standard_storelocatorwomens.jpg?$staticlink$" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-backpacks" configuration-id="banners-womens-accessories-handbags" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-backpacks"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-hats" configuration-id="banners-womens-accessories-hats" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-hats"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-other" configuration-id="banners-womens-accessories-other" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Stores-Find')$"&gt;&lt;img height="138" width="752" alt="" src="images/slot/sub_banners/standard_storelocatorwomens.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-scarves" configuration-id="banners-womens-accessories-scarves" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-hats"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing" configuration-id="banners-womens-clothing" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;a href="$url('Search-Show','cgid','newarrivals-womens')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/womens-clothing.jpg?$staticlink$" /&gt;&lt;/a&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing-bottoms" configuration-id="banners-womens-clothing-bottoms" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-clothing-bottoms"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing-outerwear" configuration-id="banners-womens-clothing-outwear" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-clothing-outerwear"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing-tops" configuration-id="banners-womens-clothing-tops" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-clothing-tops"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-footwear-boots" configuration-id="banners-womens-footwear-boots" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-footwear-boots"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-footwear-shoes" configuration-id="banners-womens-footwear-shoes" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Stores-Find')$"&gt;&lt;img height="138" width="752" alt="Store Locator" src="images/slot/sub_banners/standard_storelocatorwomens.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner" context="category" context-id="electronics" configuration-id="electronics-cameras" default="true" assigned-to-site="true">
+        <template>slots/category/catlandingslotbanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="electronics"/>
+                <category category-id="electronics-digital-cameras"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbottom" context="category" context-id="electronics" configuration-id="electronics-lcdtv-playstation-ipod-gps" default="true" assigned-to-site="true">
+        <template>slots/product/product_1x4.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <products>
+                <product product-id="mitsubishi-l65-a90"/>
+                <product product-id="sony-ps3-bundle"/>
+                <product product-id="apple-ipod-touch"/>
+                <product product-id="tomtom-one-130"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing-feeling-red" configuration-id="feeling-red" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;a href="$url('Stores-Find')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/standard_storelocatorwomens.jpg?$staticlink$" /&gt;&lt;/a&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="header-banner" context="global" configuration-id="free2dayshiporderover300" default="true" assigned-to-site="true">
+        <description>HTML slot for Free 2 Day Shipping</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;strong&gt;FREE 2-Day SHIPPING&lt;/strong&gt; FOR ORDERS OVER $300</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="minicart-banner" context="global" configuration-id="freegroundshippingover$150" assigned-to-site="true">
+        <description>Free Ground Shipping for Orders over $150</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <schedule>
+            <recurrence>
+                <time-of-day>
+                    <time-from>09:00:00.000Z</time-from>
+                    <time-to>21:00:00.000Z</time-to>
+                </time-of-day>
+            </recurrence>
+        </schedule>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;div class="minicartslot"&gt;
+&lt;p style="padding: 0px 10px;"&gt;Free Ground Shipping for Orders over $150&lt;/p&gt;
+&lt;/div&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-bottom-center" context="global" configuration-id="home-bottom-center" default="true" assigned-to-site="true">
+        <template>slots/content/homepage/home-bottom-slot.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="home-bottom-center"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-bottom-left" context="global" configuration-id="home-bottom-left" default="true" assigned-to-site="false">
+        <template>slots/content/homepage/home-bottom-slot.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="home-bottom-left"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-bottom-right" context="global" configuration-id="home-bottom-right" default="true" assigned-to-site="false">
+        <template>slots/product/verticalcarousel.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <callout-msg xml:lang="x-default">Featured Products</callout-msg>
+        <content>
+            <products>
+                <product product-id="25593016"/>
+                <product product-id="25695189"/>
+                <product product-id="25593363"/>
+                <product product-id="25686571"/>
+            </products>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-bottom" context="global" configuration-id="homepage-bottom-promos" default="true" assigned-to-site="true">
+        <template>slots/content/homebottom.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="home-bottom"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-main" context="global" configuration-id="homepage-flash" assigned-to-site="true">
+        <description>HomepageFlash</description>
+        <template>slots/html/homepageflash.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html/>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="home-main" context="global" configuration-id="homepage-jquery-cycle" default="true" assigned-to-site="true">
+        <description>Homepage Jquery Cycle</description>
+        <template>slots/content/homepage/homepageslider.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="home-cycle"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-hats" configuration-id="mens-accessories -hats-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-accessories-hats"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories" configuration-id="mens-accessories-banner-flashbanner" default="true" assigned-to-site="true">
+        <template>slots/content/giftcertificates.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="gift-certificates-banner"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-gloves" configuration-id="mens-accessories-gloves" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Stores-Find')$"&gt;&lt;img height="136" width="788" alt="" src="images/slot/sub_banners/standard_storeLocatorMens.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-luggage" configuration-id="mens-accessories-luggage" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-accessories-luggage"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-other" configuration-id="mens-accessories-other-banner" default="true" assigned-to-site="true">
+        <template>slots/html/gift_certificates.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html/>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-ties" configuration-id="mens-accessories-ties" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-accessories-ties"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner" context="category" context-id="mens" configuration-id="mens-apparel" assigned-to-site="true">
+        <template>slots/category/catlandingslotbanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-jackets"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-bottoms" configuration-id="mens-bottom-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-bottoms"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing" configuration-id="mens-clothing-banner" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Search-Show','cgid','newarrivals-mens')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/mens-clothing-accessories.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-dress-shirts" configuration-id="mens-clothing-dress-shirts" default="true" assigned-to-site="false">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-dress-shirts"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-jackets" configuration-id="mens-clothing-jackets" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-jackets"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-pants" configuration-id="mens-clothing-pants" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-pants"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-shorts" configuration-id="mens-clothing-shorts" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-shorts"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-suits" configuration-id="mens-clothing-suits" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$url('Search-Show','cgid','mens-clothing-suits')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/mens-clothing-suits.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-footwear" configuration-id="mens-footwear-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-footwear"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-footwear-boots" configuration-id="mens-footwear-boots-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-footwear-boots"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-footwear-sandals" configuration-id="mens-footwear-sandals-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-footwear-shoes"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-footwear-shoes" configuration-id="mens-footwear-shoes-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-footwear-shoes"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbottom" context="category" context-id="mens" configuration-id="mens-footwear-top-accessories" assigned-to-site="true">
+        <template>slots/category/categorylandingslotbottom.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-footwear-boots"/>
+                <category category-id="mens-clothing-tops"/>
+                <category category-id="mens-accessories"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-outerwear" configuration-id="mens-outwear-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-outerwear"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbottom" context="category" context-id="mens" configuration-id="mens-suits-shirts-pants" default="true" assigned-to-site="true">
+        <template>slots/category/categorylandingslotbottom.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-footwear-boots"/>
+                <category category-id="mens-clothing-tops"/>
+                <category category-id="mens-clothing-suits"/>
+                <category category-id="mens-clothing-dress-shirts"/>
+                <category category-id="mens-clothing-pants"/>
+                <category category-id="mens-clothing-jackets"/>
+                <category category-id="mens-clothing-shorts"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-clothing-tops" configuration-id="mens-tops-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-clothing-tops"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="mens-accessories-wallets" configuration-id="mens-wallets-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="mens-accessories-wallets"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner" context="category" context-id="newarrivals" configuration-id="new-arrivals" default="true" assigned-to-site="true">
+        <template>slots/category/catlandingslotbanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="newarrivals-mens" configuration-id="new-arrivals-men" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;a href="$url('Search-Show','cgid','newarrivals-mens')$"&gt;&lt;img alt="Mens" src="images/slot/sub_banners/mens-clothing-accessories.jpg?$staticlink$" /&gt;&lt;/a&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="newarrivals-electronics" configuration-id="newarrivals-electronics" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;a href="$httpUrl('Page-Show', 'cid', 'buying-guide-tv')$"&gt;&lt;img height="136" width="789" alt="Link to Television Buying Guide" src="images/slot/sub_banners/electronics-televisions.jpg?$staticlink$" /&gt;&lt;/a&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="newarrivals-womens" configuration-id="newarrivals-women" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="newarrivals-womens"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="search-result-banner" context="global" configuration-id="search-results-banner" default="true" assigned-to-site="true">
+        <template>slots/content/giftcertificates.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <content-assets>
+                <content-asset content-id="gift-certificates-banner"/>
+            </content-assets>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbottom" context="category" context-id="womens" configuration-id="womans-shoes-sweaters-accessories" assigned-to-site="true">
+        <template>slots/category/categorylandingslotbottom.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-shoes"/>
+                <category category-id="womens-clothing-tops"/>
+                <category category-id="womens-accessories"/>
+                <category category-id="womens-outfits"/>
+                <category category-id="womens-clothing-dresses"/>
+                <category category-id="womens-clothing-bottoms"/>
+                <category category-id="womens-clothing-jackets"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-scarves" configuration-id="womens-accessories-scarves" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-scarves"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-accessories-shoes" configuration-id="womens-accessories-shoes-banner" default="true" assigned-to-site="false">
+        <description>Banner for Womens shoes</description>
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-accessories-shoes"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner" context="category" context-id="womens" configuration-id="womens-apparel" default="true" assigned-to-site="true">
+        <description>Banner promoting women's clothing promotions</description>
+        <template>slots/category/catlandingslotbanner.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-clothing"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing-dresses" configuration-id="womens-clothing-dresses" default="true" assigned-to-site="false">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-clothing-dresses"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-clothing-jackets" configuration-id="womens-clothing-jackets" default="true" assigned-to-site="false">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-clothing-jackets"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-footwear" configuration-id="womens-footwear-banner" default="true" assigned-to-site="true">
+        <template>slots/category/categorysub_banners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-footwear"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner" context="category" context-id="womens" configuration-id="womens-greatstyles" assigned-to-site="true">
+        <description>Great Styles banner</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;p&gt;&lt;img alt="Check Out these Great Styles" width="754" height="527" src="images/slot/landing/womens-greatstyles.jpg?$staticlink$" /&gt;&lt;/p&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-jewelry" configuration-id="womens-jewelry" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-jewelry"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-jewlery-bracelets" configuration-id="womens-jewelry-bracelets" default="true" assigned-to-site="true">
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;a href="$url('Stores-Find')$"&gt;&lt;img height="136" width="789" alt="" src="images/slot/sub_banners/standard_storelocatorwomens.jpg?$staticlink$" /&gt;&lt;/a&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-jewelry-earrings" configuration-id="womens-jewelry-earrings" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-jewelry-earrings"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-banner" context="category" context-id="womens-jewelry-necklaces" configuration-id="womens-jewelry-necklaces" default="true" assigned-to-site="true">
+        <template>slots/category/categorysubbanners.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-jewelry-necklaces"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbottom" context="category" context-id="womens" configuration-id="womens-shoes-sweaters-accessories" default="true" assigned-to-site="true">
+        <description>Links to women's categories</description>
+        <template>slots/category/categorylandingslotbottom.isml</template>
+        <enabled-flag>true</enabled-flag>
+        <content>
+            <categories>
+                <category category-id="womens-footwear-shoes"/>
+                <category category-id="womens-clothing-tops"/>
+                <category category-id="womens-accessories"/>
+            </categories>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration slot-id="cat-landing-slotbanner" context="category" context-id="womens" configuration-id="womens-success" assigned-to-site="true">
+        <description>Large banner promoting the season's new styles</description>
+        <template>slots/html/htmlslotcontainer.isml</template>
+        <enabled-flag>false</enabled-flag>
+        <content>
+            <html>
+                <body xml:lang="x-default">&lt;img alt="Dress for Success"  src="images/slot/landing/womens-success.jpg?$staticlink$" /&gt;</body>
+            </html>
+        </content>
+    </slot-configuration>
+
+    <slot-configuration-campaign-assignment slot-id="cat-banner" context="category" context-id="mens-clothing-dress-shirts" configuration-id="mens-clothing-dress-shirts" campaign-id="mens-clothing-dress-shirts">
+        <rank>10</rank>
+    </slot-configuration-campaign-assignment>
+
+    <slot-configuration-campaign-assignment slot-id="cat-banner" context="category" context-id="mens-clothing-suits" configuration-id="mens-clothing-suits" campaign-id="mens-clothing-suits">
+        <rank>10</rank>
+    </slot-configuration-campaign-assignment>
+
+</slot-configurations>

@@ -1,0 +1,358 @@
+.top-banner {
+	@extend .clearfix;
+	padding-top: 0.5em;
+	position: relative;
+	* {
+		box-sizing: border-box;
+	}
+}
+.main-header {
+	@extend .clearfix;
+	padding: 0 0.5em;
+	margin-bottom: 1em;
+}
+
+.primary-logo {
+	margin: 0.2em auto;
+	width: 200px; // width of image
+	height: 38px; // height of image
+	@media screen and (min-width: 768px) {
+		left: 0.5em;
+		position: absolute;
+	}
+}
+
+.menu-toggle {
+	border: none;
+	color: $night-rider;
+	display: block;
+	float: left;
+	margin-left: 0.2em;
+	padding: 0.5em;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	.menu-icon {
+		font-size: 2em;
+	}
+}
+
+nav[role="navigation"] {
+	@extend .clearfix;
+	left: -20em;
+	width: 20em;
+	position: absolute;
+	top: 0;
+	color: $white;
+	@media screen and (min-width: 768px) {
+		left: auto;
+		position: static;
+		top: auto;
+		width: auto;
+		color: $night-rider;
+	}
+}
+
+.header-banner {
+	border-bottom: 5px solid darken($dim-gray, 10%);
+	padding: 0.8em 1rem;
+	text-transform: uppercase;
+	@media screen and (min-width: 768px) {
+		border: none;
+		margin-top: 4.5em;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.menu-utility-user {
+	padding: 0;
+	text-transform: uppercase;
+	@media screen and (min-width: 768px) {
+		font-size: 0.9em;
+		position: absolute;
+		right: 0;
+	}
+	li {
+		border-top: 1px solid darken($night-rider, 10%);
+		list-style: none;
+		padding: 0.8em 1rem;
+		&:hover {
+			background-color: darken($night-rider, 10%);
+		}
+		&:first-child {
+			border: none;
+		}
+
+		@media screen and (min-width: 768px) {
+			background-color: transparent;
+			border-top: none;
+			float: left;
+			margin: 0.3em 0.8em 0;
+			padding: 0;
+			&:hover {
+				background-color: transparent;
+			}
+			&:first-child {
+				border: none;
+			}
+		}
+	}
+	a {
+		color: $white;
+		text-decoration: none;
+		&:active {
+			color: $pacific-blue;
+		}
+		@media screen and (min-width: 768px) {
+			color: $night-rider;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.currency-converter {
+		width: 100%;
+		select {
+			color: $black;
+			width: auto;
+		}
+		@media screen and (min-width: 768px) {
+			margin-top: 0;
+			width: auto;
+			select {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.header-search {
+	width: 100%;
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		right: 10%;
+		top: 2.2em;
+		width: 17rem;
+		z-index: 1;
+	}
+	label {
+		float: left;
+		margin: 0;
+		padding-top: 0.2em;
+		width: 2.5rem;
+		&:before {
+			font-size: 2em;
+			padding-left: 0.2em;
+		}
+		@media screen and (min-width: 768px) {
+			width: auto;
+			padding-top: 0.2em;
+			padding-left: 0;
+		}
+	}
+	input[type="text"] {
+		background-color: $dim-gray;
+		border: none;
+		color: $gainsboro;
+		float: left;
+		margin: 0;
+		height: 2rem;
+		width: 85%; // default for older browser
+		width: calc(100% - 2.5rem);
+		@media screen and (min-width: 768px) {
+			background-color: transparent;
+			border-bottom: 1px solid $dim-gray;
+			color: $night-rider;
+			width: 14rem;
+			&:focus {
+				border-bottom-color: $night-rider;
+			}
+		}
+	}
+	legend {
+		background: none repeat scroll 0 0 transparent;
+	}
+}
+
+.menu-category {
+	@extend %clearfix;
+	border-bottom: 5px solid darken($dim-gray, 10%);
+	padding: 0;
+	text-transform: uppercase;
+	@media screen and (min-width: 768px) {
+		border: none;
+		float: right;
+		margin-top: 7em;
+		width: 100%;
+	}
+	li {
+		list-style: none;
+		border-top: 1px solid darken($night-rider, 10%);
+		@media screen and (min-width: 768px) {
+			border: none;
+			float: left;
+			&:hover > a {
+				background-color: transparent;
+			}
+		}
+	}
+	a {
+		color: $mantis;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.9rem 1rem;
+		width: 100%;
+		@media screen and (min-width: 768px) {
+			width: auto;
+		}
+		@media screen and (min-width: 960px) {
+			padding: 1em 2rem;
+		}
+	}
+}
+
+.level-1 > li {
+	@extend %clearfix;
+	// override background-color for small viewport
+	background-color: transparent;
+	&:first-child {
+		border: none;
+	}
+	.menu-item-toggle {
+		color: $mantis;
+		cursor: pointer;
+		float: left;
+		line-height: 1.1;
+		padding: 1rem 0.8rem;
+		transition: background-color 0.5s;
+		width: 2.1rem;
+		&:hover {
+			background-color: darken($night-rider, 10%);
+		}
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+	}
+	a {
+		transition: background-color 0.5s, color 0.5s;
+		&:hover {
+			background-color: darken($night-rider, 10%);
+		}
+		@media screen and (min-width: 768px) {
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+	> a {
+		float: left;
+		padding-left: 0.8rem;
+		&.has-sub-menu {
+			width: calc(100% - 2.1rem);
+		}
+		@media screen and (min-width: 768px) {
+			float: none;
+			padding-left: 1rem;
+			width: 100%;
+			&.has-sub-menu {
+				width: 100%;
+			}
+			&:hover {
+				background-color: darken($mantis, 10%);
+				color: $white;
+			}
+		}
+		@media screen and (min-width: 960px) {
+			padding-left: 2rem;
+		}
+	}
+}
+
+.level-2 {
+	clear: left;
+	display: none;
+	> ul {
+		@extend .clearfix;
+		padding-left: 2.1rem;
+	}
+	.level-1 > .active & {
+		display: block;
+	}
+	@media screen and (min-width: 768px) {
+		background-color: $white;
+		box-shadow: 0 3px 3px 2px rgba($charcoal, 0.3);
+		color: $night-rider;
+		padding: 0.5em 0;
+		position: absolute;
+		z-index: 1;
+		.level-1 li:hover & {
+			display: block;
+		}
+		a {
+			color: $mantis;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		> ul {
+			float: left;
+			padding-left: 0;
+			> li {
+				float: none;
+				min-width: 12em;
+				> a {
+					padding: 0.5em 1rem;
+					text-transform: none;
+					font-size: 1.5em;
+				}
+			}
+		}
+		.menu-vertical {
+			> li > a:first-child {
+				padding-top: 1em;
+			}
+		}
+		.menu-horizontal {
+			float: none;
+			> li {
+				border-right: 1px solid $gainsboro;
+				float: left;
+				&:last-child {
+					border-right: none;
+				}
+			}
+
+		}
+		.banner {
+			float: left;
+		}
+	}
+	.banner {
+		display: none;
+		@media screen and (min-width: 768px) {
+			display: block;
+		}
+	}
+}
+
+.level-3 {
+	display: none;
+	padding-left: 2em;
+	.level-2 .active & {
+		display: block;
+	}
+	@media screen and (min-width: 768px) {
+		display: block;
+		a {
+			color: darken($mantis, 20%);
+			font-weight: normal;
+			font-size: 1em;
+			padding: 0;
+		}
+		li {
+			float: none;
+			padding: 0.4em;
+		}
+	}
+}

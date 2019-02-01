@@ -1,0 +1,123 @@
+#search-suggestions {
+	background-color: $white;
+	border: 1px solid $mantis;
+	top: 34px;
+	right: 0px;
+	position: absolute;
+	z-index: 8184;
+}
+
+.search-suggestion-wrapper {
+	width: 300px;
+}
+
+.search-suggestion-wrapper-full {
+	width: 621px;
+}
+
+.search-suggestion-contents {
+	position: relative;
+}
+
+.search-suggestion-left-panel {
+	width: 300px;
+	float: left;
+}
+
+.search-suggestion-right-panel {
+	width: 300px;
+	float: left;
+	border-left: solid 1px $mantis;
+	margin-left: -1px;
+}
+
+.search-suggestion-left-panel {
+	border-right: solid 1px $mantis;
+}
+
+.search-suggestion-left-panel-hitgroup-header {
+	height: auto;
+	font-weight: bold;
+	margin: 0 0 8px 0;
+}
+
+.search-suggestion-left-panel-hitgroup {
+	color: $dim-gray;
+	margin: 10px 0 10px 10px;
+}
+
+.search-suggestion-left-panel-hitgroup-link {
+	margin-left: 1em;
+}
+
+.search-suggestion-normal-link {}
+
+.search-suggestion-left-panel-hit {
+	margin-left: 1em;
+}
+
+.search-suggestion-normal-link:hover,
+.search-suggestion-left-panel-hitgroup-link:hover,
+.search-suggestion-left-panel-hit:hover {
+	text-decoration: underline;
+}
+
+.search-suggestion-right-panel-product {
+	height: 75px;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.search-suggestion-right-panel-product-last {
+	height: 75px;
+	margin: 1em;
+}
+
+.search-suggestion-right-panel-product-hover {
+	background-color: red;
+}
+
+.search-suggestion-right-panel-product-image {
+	display: inline;
+	width: 25%;
+	display: inline-block;
+	margin-left: 1px;
+	img {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.search-suggestion-right-panel-product-details {
+	color: $night-rider;
+	height: auto;
+	display: inline;
+	width: 70%;
+	float: right;
+	text-align: right;
+}
+
+.search-phrase-suggestion {
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.search-suggestion-right-panel {
+	.whole-phrase {
+		font-style: italic;
+	}
+	.search-suggest-guess {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	.first-term-italic {
+		font-style: italic;
+	}
+	.first-term-bold {
+		font-weight: bold;
+	}
+}
+
+.search-suggestion-left-panel-parent-category {
+	color: $nobel;
+}

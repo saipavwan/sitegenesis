@@ -1,0 +1,86 @@
+<div class="top-banner" role="banner">
+	<button class="menu-toggle"><i class="menu-icon fa fa-bars"></i><span class="visually-hidden">Menu</span></button>
+	<h1 class="primary-logo">
+		<a href="#"><img src="{{logo}}" alt="Demandware SiteGenesis">
+			<span class="visually-hidden">Demandware SiteGenesis</span>
+		</a>
+	</h1>
+
+	<nav id="navigation" role="navigation">
+		<div class="header-search">
+			<form role="search" action="#" method="get" name="simpleSearch" novalidate="novalidate">
+				<fieldset>
+				<legend class="visually-hidden">Search Catalog</legend>
+				<label class="fa fa-search" for="q"><span class="visually-hidden">Search</span></label>
+				<input type="text" id="q" name="q" value="" placeholder="Enter Keyword or Item #" autocomplete="off" aria-invalid="false" class="valid">
+				</fieldset>
+			</form>
+		</div>
+
+		<ul class="menu-category level-1">
+			{{#each nav}}
+			<li>
+				{{#if children}}
+				<i class="menu-item-toggle fa fa-chevron-right"></i>
+				{{/if}}
+				<a class="{{#if children}}has-sub-menu{{/if}}" href="#">{{name}}</a>
+				{{#if children}}
+				<div class="level-2">
+					<ul class="menu-{{children_type}}">
+						{{#each children}}
+						<li>
+							<a href="#">{{name}}</a>
+							{{#if children}}
+							<ul class="level-3">
+								{{#each children}}
+								<li><a href="#">{{name}}</a></li>
+								{{/each}}
+							</ul>
+							{{/if}}
+						</li>
+						{{/each}}
+					</ul>
+					{{#if banner}}
+					<div class="banner">
+						<a href="#"><img src="{{banner.img}}" alt="{{banner.title}}"/></a>
+					</div>
+					{{/if}}
+				</div>
+				{{/if}}
+			</li>
+			{{/each}}
+		</ul>
+
+
+		<div class="header-banner">
+			<div class="html-slot-container">{{{banner.content}}}</div>
+		</div>
+
+		<ul class="menu-utility-user">
+			{{#if currency}}
+			<li class="currency-converter">
+				<span>{{currency.title}}</span>
+				<select name="{{currency.name}}">
+					{{#each currency.options}}
+					<option class="currency-converter-option" value="{{value}}"{{#if default}} selected="selected"{{/if}}>{{value}}</option>
+					{{/each}}
+				</select>
+			</li>
+			{{/if}}
+
+			<li class="user-info">
+				<a title="Login" href="#" class="user-login">Login</a> /
+				<a title="Register" href="#" class="user-register">Register</a>
+			</li>
+			<li>
+				<a href="#" title="Wish List">Wish List</a>
+			</li>
+			<li>
+				<a href="#" title="Gift Registry">Gift Registry</a>
+			</li>
+			<li>
+				<a href="#" title="Store Locator">Store Locator</a>
+			</li>
+		</ul>
+	</nav>
+</div>

@@ -1,0 +1,59 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<ul class="menu-utility-user">
+
+	<iscomment>Multi currency</iscomment>
+	<isinclude template="components/header/multicurrency"/>
+	<isset name="customer" value="${pdict.CurrentCustomer}" scope="page"/>
+	<isset name="notStr" value="${Resource.msg('headercustomerinfo.not', 'components', null)}" scope="page"/>
+	<isset name="loginStr" value="${Resource.msg('global.login', 'locale', null)}" scope="page"/>
+
+	<iscomment>User has session, but not currently active (welcome back)</iscomment>
+	<li class="user-info">
+		<isif condition="${customer.registered && !customer.authenticated}">
+			${Resource.msg('headercustomerinfo.welcomeback', 'components', null)}
+			<isprint value="${customer.profile.firstName}"/>
+			<isprint value="${customer.profile.lastName}"/>
+			- <a title="${loginStr}" href="${URLUtils.https('Account-Show')}" class="user-account-login">
+				${loginStr}
+			</a>
+			<a class="not-user" title="${notStr} ${customer.profile.firstName} ${customer.profile.lastName}" href="${URLUtils.https('Login-Logout')}">
+				(
+					${notStr}
+					<isprint value="${pdict.CurrentCustomer.profile.firstName}"/>?
+				)
+			</a>
+		<iscomment>User has sesssion and is validated</iscomment>
+		<iselseif condition="${customer.registered}">
+			${Resource.msg('headercustomerinfo.welcome', 'components', null)}
+			<a class="user-account" href="${URLUtils.https('Account-Show')}" title="${Resource.msg('global.accountlink', 'locale', null)} ">
+				<isprint value="${customer.profile.firstName}"/>
+				<isprint value="${customer.profile.lastName}"/>
+			</a>
+			<a class="not-user" title="${notStr} ${customer.profile.firstName} ${customer.profile.lastName}" href="${URLUtils.https('Login-Logout')}">
+				(
+					${notStr}
+					<isprint value="${customer.profile.firstName}"/>?
+				)
+			</a>
+		<iscomment>User has no session</iscomment>
+		<iselse/>
+			<a title="${loginStr}" href="${URLUtils.https('Account-Show')}" class="user-login">${loginStr}</a> /
+			<a title="${Resource.msg('global.register', 'locale', null)}" href="${URLUtils.https('Account-StartRegister')}" class="user-register">${Resource.msg('global.register','locale',null)}</a>
+		</isif>
+	</li>
+	<li>
+		<a href="${URLUtils.https('Wishlist-Show')}" title="${Resource.msg('header.wishlistlink','components',null)}">
+			${Resource.msg('header.wishlistlink','components',null)}
+		</a>
+	</li>
+	<li>
+		<a href="${URLUtils.https('GiftRegistry-Start')}" title="${Resource.msg('header.registrylink','components',null)}">
+			${Resource.msg('header.registrylink','components',null)}
+		</a>
+	</li>
+	<li>
+		<a href="${URLUtils.http('Stores-Find')}" title="${Resource.msg('header.storelocator','components',null)}">
+			${Resource.msg('header.storelocator','components',null)}
+		</a>
+	</li>
+</ul>

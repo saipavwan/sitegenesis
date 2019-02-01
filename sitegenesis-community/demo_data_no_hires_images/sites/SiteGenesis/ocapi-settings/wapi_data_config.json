@@ -1,0 +1,37 @@
+{
+  "_v":"14.2",
+  "clients":
+  [ 
+    {
+      "client_id":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "resources":
+      [
+        {
+          "resource_id":"/customers",
+          "read_attributes":"(**)",
+          "write_attributes":"(**)"
+        },
+        {
+          "resource_id":"/customers/{customer_no}",
+          "read_attributes":"(**)",
+          "write_attributes":"(**)"
+        },
+        {
+          "resource_id":"/customers/{customer_no}/addresses",
+          "read_attributes":"(**)",
+          "write_attributes":"(**)"
+        },
+        {
+          "resource_id":"/customers/{customer_no}/addresses/{address_id}",
+          "read_attributes":"(**)",
+          "write_attributes":"(**)"
+        },
+        {
+          "resource_id":"/customer_search",
+          "read_attributes":"(**)",
+          "write_attributes":"(**)"
+        }
+      ]
+    }
+  ]
+}

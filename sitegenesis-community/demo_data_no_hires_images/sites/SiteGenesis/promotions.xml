@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<promotions xmlns="http://www.demandware.com/xml/impex/promotion/2008-01-31">
+
+    <campaign campaign-id="Automation">
+        <description>Automation</description>
+        <enabled-flag>true</enabled-flag>
+        <customer-groups>
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+
+    <campaign campaign-id="Payment-promo">
+        <description>$50 off on selecting Visa</description>
+        <enabled-flag>false</enabled-flag>
+        <customer-groups>
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+    
+    <campaign campaign-id="electronics-promotions">
+        <description>Electronics Product Promotions</description>
+        <enabled-flag>false</enabled-flag>
+        <customer-groups>
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+
+    <campaign campaign-id="mens-clothing-dress-shirts">
+        <description>This a campaign for the Mens Dress Shirts Category offering a specific banner as well as a 20% off dress shirts promotion, and a custom sort rule of product name ascending</description>
+        <enabled-flag>false</enabled-flag>
+        <customer-groups>
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+
+    <campaign campaign-id="mens-clothing-suits">
+        <description>This is a campaign that displays a landing banner, with a 25% discount on all suits and default sorting rule of top selling suits.</description>
+        <enabled-flag>false</enabled-flag>
+        <customer-groups>
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+
+    <campaign campaign-id="multi-currency demo">
+        <description>Multi-currency campaign</description>
+        <enabled-flag>false</enabled-flag>
+        <customer-groups>
+            <customer-group group-id="Everyone"/>
+        </customer-groups>
+    </campaign>
+
+    <global-promotion-settings>
+        <global-excluded-products>
+            <included-products>
+                <condition-group>
+                    <category-condition catalog-id="storefront-catalog-en">
+                        <category-id>electronic-games</category-id>
+                    </category-condition>
+                </condition-group>
+            </included-products>
+        </global-excluded-products>
+    </global-promotion-settings>
+
+    <promotion promotion-id="10%offordersover150">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">Get 10% Off Orders when Spending $150</name>
+        <callout-msg xml:lang="x-default">Get 10% Off Orders when Spending $150</callout-msg>
+        <order-promotion-rule>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>150.0</threshold>
+                    <percentage>10.0</percentage>
+                </discount>
+            </discounts>
+            <enable-upsells>true</enable-upsells>
+            <upsell-threshold>25.0</upsell-threshold>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="10off-InStyle">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">10% Summer Flats</name>
+        <callout-msg xml:lang="x-default">10% off Summer Flats</callout-msg>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-accessories-shoes</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discounts condition-type="product-amount">
+                <discount>
+                    <threshold>1.0</threshold>
+                    <percentage>10.0</percentage>
+                </discount>
+            </discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="15off-gps">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">GPS 15% Off</name>
+        <callout-msg xml:lang="x-default">15% Off GPS Unit With Coupon</callout-msg>
+        <details xml:lang="x-default">15% Off GPS Unit With Coupon with a coupon.</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics-gps-units</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>15.0</percentage>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="15off-nano">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">15% Off iPod Nano</name>
+        <callout-msg xml:lang="x-default">Save 15% Off iPod Nano</callout-msg>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>apple-ipod-nano</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>15.0</percentage>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="15off-samsunglcd">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">15% Off Samsung LCD Televisions</name>
+        <callout-msg xml:lang="x-default">Additional 15% Off Samsung LCD Televisions</callout-msg>
+        <details xml:lang="x-default">Additional 15% Off Samsung LCD Televisions, Limit 1 per order.</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics-televisions-flat-screen</category-id>
+                        </category-condition>
+                        <brand-condition operator="is equal">
+                            <brand>Samsung</brand>
+                        </brand-condition>
+                        <attribute-condition operator="equals" attribute-id="tvType">
+                            <attribute-value>0020</attribute-value>
+                        </attribute-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>15.0</percentage>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="20ff-dress-shirts">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">20% off dress shirts category</name>
+        <callout-msg xml:lang="x-default">20% off dress shirts category</callout-msg>
+        <details xml:lang="x-default">20% off dress shirts category</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-dress-shirts</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>20.0</percentage>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="20off-gamewconsole">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">20% Off WII Game</name>
+        <callout-msg xml:lang="x-default">Purchase a WII Console Save 20% off a WII Game</callout-msg>
+        <details xml:lang="x-default">Purchase a WII Console Save 20% off a WII Game, must by a WII console to be eligible for this promotion.</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>nintendo-wii-console</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>easports-madden-nfl-09-wii</product-id>
+                            <product-id>lucasarts-lego-indiana-jones-original-adventure-wii</product-id>
+                            <product-id>namco-we-ski-wii</product-id>
+                            <product-id>sega-mario-sonic-olympics-2008-wii</product-id>
+                            <product-id>sega-bass-fishing-wii</product-id>
+                            <product-id>midway-cruisn-wii</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <bogo>
+                <threshold>1</threshold>
+                <percentage>20.0</percentage>
+                <eligible-quantity>1</eligible-quantity>
+            </bogo>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="20off-tvs">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">20% Off select TVs</name>
+        <callout-msg xml:lang="x-default">20% Off select TVs</callout-msg>
+        <details xml:lang="x-default">20% Off TVs, select models only for this promotion. Limit 1 television per order</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics-televisions</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>20.0</percentage>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="25off-suits">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">25% off Men's Suits Category</name>
+        <callout-msg xml:lang="x-default">25% off Men's Suits Category</callout-msg>
+        <details xml:lang="x-default">25% off Men's Suits Category</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-suits</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>25.0</percentage>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+    
+    <promotion promotion-id="Payment-Promo">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">50-off-using-visa</name>
+        <callout-msg xml:lang="x-default">$50 off using Visa CC</callout-msg>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>newarrivals</category-id>
+                            <category-id>mens</category-id>
+                            <category-id>womens</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <payment-methods>
+                <method-id>CREDIT_CARD.Visa</method-id>
+            </payment-methods>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>0.0</threshold>
+                    <amount>50.0</amount>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="buy3dsgames-75">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">3 Nintendo DS Games For $75</name>
+        <callout-msg xml:lang="x-default">Buy Any 3 Nintendo DS Games For $75</callout-msg>
+        <details xml:lang="x-default">Buy Any 3 Nintendo DS Games For $75, you must be registered to qualify for this promotion</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>ubi-soft-quick-yoga-training-nintendods</product-id>
+                            <product-id>nintendo-big-brain-academy-nintendods</product-id>
+                            <product-id>nintendo-mario-kart-nintendods</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <total-discounts>
+                <discount>
+                    <total-fixed-price>75.0</total-fixed-price>
+                    <eligible-quantity>3</eligible-quantity>
+                </discount>
+            </total-discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="freeship-over150">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">Free Ground shipping on orders over $150</name>
+        <callout-msg xml:lang="x-default">Free Ground shipping on orders over $150</callout-msg>
+        <details xml:lang="x-default">Free Ground shipping on orders over $150</details>
+        <shipping-promotion-rule>
+            <shipping-methods>
+                <method-id>001</method-id>
+            </shipping-methods>
+            <discounts condition-type="shipment-total">
+                <discount>
+                    <threshold>150.0</threshold>
+                    <free/>
+                </discount>
+            </discounts>
+            <max-applications>1</max-applications>
+        </shipping-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="freeshipping-tvs">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">Free Shipping on TVs</name>
+        <callout-msg xml:lang="x-default">Free Shipping for all Televisions</callout-msg>
+        <details xml:lang="x-default">&lt;table border="0" cellpadding="0" cellspacing="5"&gt;&#13;
+    &lt;tbody&gt;&#13;
+        &lt;tr&gt;&#13;
+            &lt;td&gt;&lt;b&gt;Free Shipping on Televisions!&lt;/b&gt;&lt;/td&gt;&#13;
+        &lt;/tr&gt;&#13;
+        &lt;tr&gt;&#13;
+            &lt;td&gt;For a limited time, receive free Standard ground shipping on all Televisions!&lt;/td&gt;&#13;
+        &lt;/tr&gt;&#13;
+        &lt;tr&gt;&#13;
+            &lt;td&gt;&#13;
+            &lt;ul&gt;&#13;
+                &lt;li&gt;Offer only valid while supplies last.&lt;/li&gt;&#13;
+                &lt;li&gt;Offer only applies to Standard ground shipping.&lt;/li&gt;&#13;
+                &lt;li&gt;This promotional offer may be modified or terminated at any time without notice.&lt;/li&gt;&#13;
+            &lt;/ul&gt;&#13;
+            &lt;/td&gt;&#13;
+        &lt;/tr&gt;&#13;
+        &lt;tr&gt;&#13;
+            &lt;td&gt;&lt;b&gt;HOW IT WORKS&lt;/b&gt;&lt;br /&gt;&#13;
+            To participate, simply add any Television to your shopping cart and Free Standard Shipping will automatically be applied. NOTE: You must select the &amp;quot;Standard Shipping&amp;quot; option to receive the discount. Otherwise, the full-expedited shipping charge will be applied. Note that this offer is only valid for orders shipped within the continental U.S. This offer applies only to the individual items; other items in your cart that are not eligible will still incur a shipping charge.&lt;/td&gt;&#13;
+        &lt;/tr&gt;&#13;
+        &lt;tr&gt;&#13;
+            &lt;td&gt;&lt;hr /&gt;&#13;
+            &lt;b&gt;TERMS AND CONDITIONS&lt;/b&gt;&lt;br /&gt;&#13;
+            Offer only valid on items marked with the FREE SHIPPING Savings Alert icon. Applies only for Standard shipping. Discount does not apply to taxes, gift-wrapping or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other promotional offer nor is this offer valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise. Offer not valid on cancelled or out of stock merchandise.&lt;/td&gt;&#13;
+        &lt;/tr&gt;&#13;
+    &lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics-televisions</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <shipping-methods>
+                <method-id>004</method-id>
+                <method-id>001</method-id>
+            </shipping-methods>
+            <simple-discount>
+                <free-shipping/>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ps3bundle-50off">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">Playstation 3 Bundle $50 off</name>
+        <callout-msg xml:lang="x-default">Save $50 on Playstation 3 Bundle</callout-msg>
+        <details xml:lang="x-default">Save $50 on Playstation 3 Bundle, limited to 1 per order.</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>sony-ps3-bundle</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <amount>50.0</amount>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="15EUR-off-dresses">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <currency>EUR</currency>
+        <name xml:lang="x-default">€15 off all Dresses</name>
+        <callout-msg xml:lang="x-default">€15 off all Dresses</callout-msg>
+        <details xml:lang="x-default">€15 off all Dresses</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-clothing-dresses</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <amount>15.0</amount>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="25USD-off-dresses">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <currency>USD</currency>
+        <name xml:lang="x-default">$25 off all Dresses</name>
+        <callout-msg xml:lang="x-default">$25 off all Dresses</callout-msg>
+        <details xml:lang="x-default">$25 off all Dresses</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-clothing-dresses</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <amount>25.0</amount>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ExclusivityClass2">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">ExclusivityClass2</name>
+        <callout-msg xml:lang="x-default">ExclusivityClass2</callout-msg>
+        <details xml:lang="x-default">ExclusivityClass2</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>150.0</threshold>
+                    <percentage>50.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="$50FixedProductsAmountAbove100">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">$50FixedProductsAmountAbove100</name>
+        <callout-msg xml:lang="x-default">$50FixedProductsAmountAbove100</callout-msg>
+        <details xml:lang="x-default">$50FixedProductsAmountAbove100</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-clothing-tops</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <identical-products>true</identical-products>
+            <discounts condition-type="product-amount">
+                <discount>
+                    <threshold>100.0</threshold>
+                    <fixed-price>50.0</fixed-price>
+                </discount>
+            </discounts>
+            <max-applications>2</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="20%offOrderAmountOver200">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">20%offOrderAmountOver200</name>
+        <callout-msg xml:lang="x-default">20%offOrderAmountOver200</callout-msg>
+        <details xml:lang="x-default">20%offOrderAmountOver200</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-pants</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <payment-methods>
+                <method-id>CREDIT_CARD</method-id>
+            </payment-methods>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>200.0</threshold>
+                    <percentage>20.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ExclusivityNo">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">ExclusivityNo</name>
+        <callout-msg xml:lang="x-default">ExclusivityNo</callout-msg>
+        <details xml:lang="x-default">ExclusivityNo</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-pants</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>200.0</threshold>
+                    <percentage>60.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="$50offOrderAmountOver300">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">$50offOrderAmountOver300</name>
+        <callout-msg xml:lang="x-default">$50offOrderAmountOver300</callout-msg>
+        <details xml:lang="x-default">$50offOrderAmountOver300</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <brand-condition operator="is equal">
+                            <brand>Kodak</brand>
+                        </brand-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discount-only-qualifying-products>false</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>300.0</threshold>
+                    <amount>50.0</amount>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ProductCombinations">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">ProductCombinations</name>
+        <callout-msg xml:lang="x-default">ProductCombinations</callout-msg>
+        <details xml:lang="x-default">ProductCombinations</details>
+        <product-promotion-rule>
+            <discounted-products-combination>
+                <product-constraints>
+                    <product-constraint>
+                        <quantity>1</quantity>
+                        <product-specification>
+                            <included-products>
+                                <condition-group>
+                                    <product-id-condition operator="is equal">
+                                        <product-id>TG720</product-id>
+                                    </product-id-condition>
+                                </condition-group>
+                            </included-products>
+                        </product-specification>
+                    </product-constraint>
+                </product-constraints>
+            </discounted-products-combination>
+            <disable-global-excluded-products>true</disable-global-excluded-products>
+            <simple-discount>
+                <bonus>
+                    <bonus-products>
+                        <product-id>061492216690</product-id>
+                        <product-id>061492216683</product-id>
+                    </bonus-products>
+                </bonus>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="$50offShippingAmountAbove150">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>true</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">$50offShippingAmountAbove150</name>
+        <callout-msg xml:lang="x-default">$50offShippingAmountAbove150</callout-msg>
+        <details xml:lang="x-default">$50offShippingAmountAbove150</details>
+        <shipping-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics-televisions-flat-screen</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <shipping-methods>
+                <method-id>001</method-id>
+                <method-id>002</method-id>
+            </shipping-methods>
+            <discounts condition-type="shipment-total">
+                <discount>
+                    <threshold>50.0</threshold>
+                    <amount>15.0</amount>
+                </discount>
+            </discounts>
+        </shipping-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="Duplicate-Rank-Exclusivity-No">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">Duplicate-Rank-Exclusivity-No</name>
+        <callout-msg xml:lang="x-default">Duplicate-Rank-Exclusivity-No</callout-msg>
+        <details xml:lang="x-default">Duplicate-Rank-Exclusivity-No</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-pants</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>200.0</threshold>
+                    <percentage>40.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ExclusivityClass1">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">ExclusivityClass1</name>
+        <callout-msg xml:lang="x-default">ExclusivityClass1</callout-msg>
+        <details xml:lang="x-default">ExclusivityClass1</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-suits</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>250.0</threshold>
+                    <percentage>40.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="50%offShippingAmountAbove100">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">50%offShippingAmountAbove100</name>
+        <callout-msg xml:lang="x-default">50%offShippingAmountAbove100</callout-msg>
+        <details xml:lang="x-default">50%offShippingAmountAbove100</details>
+        <shipping-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <brand-condition operator="is equal">
+                            <brand>Canon</brand>
+                        </brand-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <shipping-methods>
+                <method-id>002</method-id>
+            </shipping-methods>
+            <discounts condition-type="shipment-total">
+                <discount>
+                    <threshold>100.0</threshold>
+                    <percentage>50.0</percentage>
+                </discount>
+            </discounts>
+        </shipping-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ExclusivityGlobal1">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>global</exclusivity>
+        <name xml:lang="x-default">ExclusivityGlobal1</name>
+        <callout-msg xml:lang="x-default">ExclusivityGlobal1</callout-msg>
+        <details xml:lang="x-default">ExclusivityGlobal1</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <brand-condition operator="is equal">
+                            <brand>Kodak</brand>
+                            <brand>Pioneer</brand>
+                        </brand-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discounts condition-type="product-quantity">
+                <discount>
+                    <threshold>1</threshold>
+                    <percentage>50.0</percentage>
+                </discount>
+            </discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="%offproductOptions">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">%offproductOptions</name>
+        <callout-msg xml:lang="x-default">%offproductOptions</callout-msg>
+        <details xml:lang="x-default">%offproductOptions</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <disable-global-excluded-products>true</disable-global-excluded-products>
+            <discounts condition-type="product-amount">
+                <discount>
+                    <threshold>150.0</threshold>
+                    <percent-off-options>
+                        <percentage>20</percentage>
+                        <product-options>
+                            <option-id>red</option-id>
+                        </product-options>
+                    </percent-off-options>
+                </discount>
+            </discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="FreeShippingForNumberAbove5">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">FreeShippingForNumberAbove5</name>
+        <callout-msg xml:lang="x-default">FreeShippingForNumberAbove5</callout-msg>
+        <details xml:lang="x-default">FreeShippingForNumberAbove5</details>
+        <shipping-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-accessories-shoes</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <shipping-methods>
+                <method-id>002</method-id>
+                <method-id>003</method-id>
+            </shipping-methods>
+            <prohibit-nonqualifying-products>false</prohibit-nonqualifying-products>
+            <discounts condition-type="product-quantity">
+                <discount>
+                    <threshold>5</threshold>
+                    <free/>
+                </discount>
+            </discounts>
+        </shipping-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="BonusProductOnOrderOfAmountABove250">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">BonusProductOnOrderOfAmountABove250</name>
+        <callout-msg xml:lang="x-default">BonusProductOnOrderOfAmountABove250</callout-msg>
+        <details xml:lang="x-default">BonusProductOnOrderOfAmountABove250</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-clothing-jackets</category-id>
+                            <category-id>womens-clothing-feeling-red</category-id>
+                            <category-id>womens-clothing-bottoms</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>false</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>250.0</threshold>
+                    <bonus>
+                        <bonus-products>
+                            <product-id>008884304108</product-id>
+                        </bonus-products>
+                    </bonus>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="BuyXandYgetZ">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">Buy5for50</name>
+        <callout-msg xml:lang="x-default">BuyXandYgetZ</callout-msg>
+        <details xml:lang="x-default">BuyXandYgetZ</details>
+        <product-promotion-rule>
+            <qualifying-products-combination>
+                <product-constraints>
+                    <product-constraint>
+                        <quantity>2</quantity>
+                        <product-specification>
+                            <included-products>
+                                <condition-group>
+                                    <product-id-condition operator="is equal">
+                                        <product-id>vizio-vw46lf</product-id>
+                                        <product-id>vizio-vp504f</product-id>
+                                        <product-id>vizio-vp503</product-id>
+                                        <product-id>vizio-vp422</product-id>
+                                        <product-id>vizio-vo37l</product-id>
+                                        <product-id>vizio-vo32lf</product-id>
+                                    </product-id-condition>
+                                </condition-group>
+                            </included-products>
+                        </product-specification>
+                    </product-constraint>
+                </product-constraints>
+            </qualifying-products-combination>
+            <discounted-products-combination>
+                <product-constraints>
+                    <product-constraint>
+                        <quantity>1</quantity>
+                        <product-specification>
+                            <included-products>
+                                <condition-group>
+                                    <product-id-condition operator="is equal">
+                                        <product-id>vizio-gv47lf</product-id>
+                                        <product-id>vizio-sv420xvt</product-id>
+                                        <product-id>vizio-vo22lf</product-id>
+                                    </product-id-condition>
+                                </condition-group>
+                            </included-products>
+                        </product-specification>
+                    </product-constraint>
+                </product-constraints>
+            </discounted-products-combination>
+            <disable-global-excluded-products>true</disable-global-excluded-products>
+            <bogo>
+                <threshold>1</threshold>
+                <fixed-price>50.0</fixed-price>
+                <eligible-quantity>1</eligible-quantity>
+            </bogo>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="Buy5for50">
+        <enabled-flag>true</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">Buy5for50</name>
+        <callout-msg xml:lang="x-default">Buy5for50</callout-msg>
+        <details xml:lang="x-default">Buy5for50</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>nikon-d60-wlens</product-id>
+                            <product-id>sony-cybershot-t77</product-id>
+                            <product-id>nikon-d40-wlens</product-id>
+                            <product-id>canon-powershot-sd1100-is</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <total-discounts>
+                <discount>
+                    <total-fixed-price>50.0</total-fixed-price>
+                    <eligible-quantity>5</eligible-quantity>
+                </discount>
+            </total-discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="DuplicateExclusivityNo-Low">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">DuplicateExclusivityNo-Low</name>
+        <callout-msg xml:lang="x-default">DuplicateExclusivityNo-Low</callout-msg>
+        <details xml:lang="x-default">DuplicateExclusivityNo-Low</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-pants</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>200.0</threshold>
+                    <percentage>20.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="Rank-Exclusivity-No">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">Rank-Exclusivity-No</name>
+        <callout-msg xml:lang="x-default">Rank-Exclusivity-No</callout-msg>
+        <details xml:lang="x-default">Rank-Exclusivity-No</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-pants</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>200.0</threshold>
+                    <percentage>80.0</percentage>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="$30FixedShippingAmountAbove150">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">$30FixedShippingAmountAbove150</name>
+        <callout-msg xml:lang="x-default">$30FixedShippingAmountAbove150</callout-msg>
+        <details xml:lang="x-default">$30FixedShippingAmountAbove150</details>
+        <shipping-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics</category-id>
+                            <category-id>mens</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <shipping-methods>
+                <method-id>001</method-id>
+            </shipping-methods>
+            <discounts condition-type="shipment-total">
+                <discount>
+                    <threshold>10.0</threshold>
+                    <fixed-price>2.0</fixed-price>
+                </discount>
+            </discounts>
+        </shipping-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="BuyXgetY">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">BuyXgetY</name>
+        <callout-msg xml:lang="x-default">BuyXgetY</callout-msg>
+        <details xml:lang="x-default">BuyXgetY</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <product-id-condition operator="is equal">
+                            <product-id>nikon-d40-wlens</product-id>
+                            <product-id>canon-powershot-sd1100-is</product-id>
+                            <product-id>sony-cybershot-t77</product-id>
+                            <product-id>nikon-d60-wlens</product-id>
+                        </product-id-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <disable-global-excluded-products>true</disable-global-excluded-products>
+            <identical-products>true</identical-products>
+            <bogo>
+                <threshold>3</threshold>
+                <free/>
+                <eligible-quantity>2</eligible-quantity>
+            </bogo>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ExclusivityGlobal2">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>global</exclusivity>
+        <name xml:lang="x-default">ExclusivityGlobal2</name>
+        <callout-msg xml:lang="x-default">ExclusivityGlobal2</callout-msg>
+        <details xml:lang="x-default">ExclusivityGlobal2</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <brand-condition operator="is equal">
+                            <brand>Nintendo</brand>
+                            <brand>Nikon</brand>
+                        </brand-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discounts condition-type="product-quantity">
+                <discount>
+                    <threshold>1</threshold>
+                    <percentage>50.0</percentage>
+                </discount>
+            </discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ChoiceOfBonusProductOnOrderOfAmountAbove100">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>true</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">ChoiceOfBonusProductOnOrderOfAmountAbove100</name>
+        <callout-msg xml:lang="x-default">ChoiceOfBonusProductOnOrderOfAmountAbove100</callout-msg>
+        <details xml:lang="x-default">ChoiceOfBonusProductOnOrderOfAmountAbove100</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-jewelry</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-jewelry-necklaces</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>false</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>100.0</threshold>
+                    <bonus-choice>
+                        <bonus-products>
+                            <bonus-product product-id="008885004540">
+                                <bonus-product-price>0</bonus-product-price>
+                            </bonus-product>
+                            <bonus-product product-id="008884304047">
+                                <bonus-product-price>0</bonus-product-price>
+                            </bonus-product>
+                        </bonus-products>
+                        <max-bonus-items>1</max-bonus-items>
+                    </bonus-choice>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="5%offOrderAmountAbove100">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">5%offOrderAmountAbove100</name>
+        <callout-msg xml:lang="x-default">5%offOrderAmountAbove100</callout-msg>
+        <details xml:lang="x-default">5%offOrderAmountAbove100</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>womens-accessories</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>100.0</threshold>
+                    <percentage>5.0</percentage>
+                </discount>
+            </discounts>
+            <enable-upsells>true</enable-upsells>
+            <upsell-threshold>50.0</upsell-threshold>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="5%offWithoutQualifyingProducts">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">5%offWithoutQualifyingProducts</name>
+        <callout-msg xml:lang="x-default">5%offWithoutQualifyingProducts</callout-msg>
+        <details xml:lang="x-default">5%offWithoutQualifyingProducts</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-accessories-gloves</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>5.0</percentage>
+            </simple-discount>
+            <max-applications>2</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="$50offOrderCountAbove5">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">$50offOrderCountAbove5</name>
+        <callout-msg xml:lang="x-default">$50offOrderCountAbove5</callout-msg>
+        <details xml:lang="x-default">$50offOrderCountAbove5</details>
+        <order-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <excluded-products>
+                <included-products>
+                    <condition-group>
+                        <price-condition operator="greater than">
+                            <price>200</price>
+                        </price-condition>
+                    </condition-group>
+                </included-products>
+            </excluded-products>
+            <discount-only-qualifying-products>true</discount-only-qualifying-products>
+            <discounts condition-type="product-quantity">
+                <discount>
+                    <threshold>5</threshold>
+                    <amount>50.0</amount>
+                </discount>
+            </discounts>
+        </order-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="ExclusivityClass3">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>class</exclusivity>
+        <name xml:lang="x-default">ExclusivityClass3</name>
+        <callout-msg xml:lang="x-default">ExclusivityClass3</callout-msg>
+        <details xml:lang="x-default">ExclusivityClass3</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>electronics-televisions</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>40.0</percentage>
+            </simple-discount>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion promotion-id="$50offProductsAmountAbove400">
+        <enabled-flag>false</enabled-flag>
+        <searchable-flag>false</searchable-flag>
+        <exclusivity>no</exclusivity>
+        <name xml:lang="x-default">$50offProductsAmountAbove400</name>
+        <callout-msg xml:lang="x-default">$50offProductsAmountAbove400</callout-msg>
+        <details xml:lang="x-default">$50offProductsAmountAbove400</details>
+        <product-promotion-rule>
+            <qualifying-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-en">
+                            <category-id>mens-clothing-suits</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </qualifying-products>
+            <identical-products>true</identical-products>
+            <discounts condition-type="product-amount">
+                <discount>
+                    <threshold>400.0</threshold>
+                    <amount>50.0</amount>
+                </discount>
+            </discounts>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion-campaign-assignment promotion-id="Payment-Promo" campaign-id="Payment-promo">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="15off-gps" campaign-id="electronics-promotions">
+        <qualifiers match-mode="any">
+            <coupons/>
+        </qualifiers>
+        <coupons>
+            <coupon coupon-id="15OFFGPS"/>
+        </coupons>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="15off-nano" campaign-id="electronics-promotions">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="15off-samsunglcd" campaign-id="electronics-promotions">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="20off-tvs" campaign-id="electronics-promotions">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="freeshipping-tvs" campaign-id="electronics-promotions">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ps3bundle-50off" campaign-id="electronics-promotions">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="20ff-dress-shirts" campaign-id="mens-clothing-dress-shirts">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+        <rank>10</rank>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="25off-suits" campaign-id="mens-clothing-suits">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+        <rank>10</rank>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="15EUR-off-dresses" campaign-id="multi-currency demo">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="25USD-off-dresses" campaign-id="multi-currency demo">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ExclusivityClass2" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="$50FixedProductsAmountAbove100" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="20%offOrderAmountOver200" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ExclusivityNo" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="$50offOrderAmountOver300" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ProductCombinations" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="$50offShippingAmountAbove150" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="Duplicate-Rank-Exclusivity-No" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ExclusivityClass1" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="50%offShippingAmountAbove100" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ExclusivityGlobal1" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="%offproductOptions" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="FreeShippingForNumberAbove5" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="BonusProductOnOrderOfAmountABove250" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="BuyXandYgetZ" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="Buy5for50" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="DuplicateExclusivityNo-Low" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="Rank-Exclusivity-No" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="$30FixedShippingAmountAbove150" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="BuyXgetY" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ExclusivityGlobal2" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ChoiceOfBonusProductOnOrderOfAmountAbove100" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="5%offOrderAmountAbove100" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="5%offWithoutQualifyingProducts" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="$50offOrderCountAbove5" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="ExclusivityClass3" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="$50offProductsAmountAbove400" campaign-id="Automation">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+</promotions>

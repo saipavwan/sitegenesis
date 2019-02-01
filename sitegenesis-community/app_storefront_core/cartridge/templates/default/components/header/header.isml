@@ -1,0 +1,36 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<iscache type="relative" hour="24"/>
+
+<div class="top-banner" role="banner">
+	<button class="menu-toggle"><i class="menu-icon fa fa-bars"></i><span class="visually-hidden">Menu</span></button>
+	<h1 class="primary-logo">
+		<a href="${URLUtils.url('Home-Show')}">
+			<img src="${URLUtils.staticURL('/images/logo.png')}" alt="${Resource.msg('global.storename','locale',null)}">
+			<span class="visually-hidden">${Resource.msg('global.storename','locale',null)}</span>
+		</a>
+	</h1>
+
+	<iscomment>INCLUDE: Mini-cart, do not cache</iscomment>
+	<div id="mini-cart">
+		<isinclude url="${URLUtils.url('Cart-MiniCart')}"/>
+	</div>
+
+	<nav id="navigation" role="navigation">
+		<div class="header-search">
+			<isinclude template="search/simplesearch"/>
+		</div>
+
+		<iscomment>INCLUDE: category menu</iscomment>
+		<isinclude url="${URLUtils.url('Home-IncludeHeaderMenu')}"/>
+
+		<iscomment>SLOT CONFIGURATION:  SLOT/ID: header-banner</iscomment>
+		<div class="header-banner">
+			<isslot id="header-banner" description="Header banner within the header, between the logo and search bar, width XXXpx by height XXpx." context="global" />
+		</div>
+
+		<!--  utility user menu -->
+		<iscomment>INCLUDE: Customer login information, login, etc. (contains personal information, do not cache)</iscomment>
+		<isinclude url="${URLUtils.url('Home-IncludeHeaderCustomerInfo')}"/>
+	</nav>
+
+</div><!-- /header -->

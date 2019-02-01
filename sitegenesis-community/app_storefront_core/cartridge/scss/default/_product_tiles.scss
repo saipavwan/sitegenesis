@@ -1,0 +1,98 @@
+.product-tile {
+	@extend %clearfix;
+	color: $nobel;
+	position: relative;
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+	.product-image {
+		height: 195px;
+		position: relative;
+	}
+	.product-name {
+		font-family: $serif;
+		font-size: 1.2em;
+		font-style: italic;
+		margin-top: 1em;
+		height: 3em;
+		overflow: auto;
+	}
+	.product-pricing .product-standard-price {
+		text-decoration: line-through;
+	}
+	.grid-tile & .product-swatches {
+		float: right;
+	}
+	.product-swatches-all {
+		cursor: pointer;
+		font-size: 0.9em;
+	}
+	.product-swatches {
+		ul {
+			list-style: none outside none;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			&.swatch-toggle {
+				background: none repeat scroll 0 0 $white;
+				display: none;
+				position: absolute;
+			}
+		}
+		&:hover ul.swatch-toggle {
+			display: block;
+		}
+		li {
+			float: left;
+		}
+		.swatch {
+			display: block;
+			width: 16px;
+			img {
+				border: 1px solid $white;
+				height: 12px;
+				padding: 1px;
+				width: 12px;
+			}
+		}
+		.selected img, img:hover {
+			border-color: $pacific-blue;
+		}
+	}
+	.product-promo {
+		font-size: 0.8em;
+		margin: 6px 0;
+		text-transform: uppercase;
+	}
+	.product-compare {
+		float: left;
+		width: 40px;
+		line-height: 11px;
+		label {
+			float: right;
+			font-weight: 400;
+			padding: 0;
+			width: 50%;
+		}
+		input {
+			float: left;
+			margin: 0;
+		}
+	}
+	.product-review {
+		margin-bottom: 1em;
+		.rating-title {
+			display: inline-block;
+			margin-right: 1em;
+		}
+		.rating {
+			display: inline-block;
+		}
+	}
+}
+
+.capture-product-id {
+	left: -999em;
+	position: absolute;
+}

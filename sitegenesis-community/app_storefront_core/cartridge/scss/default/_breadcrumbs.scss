@@ -1,0 +1,69 @@
+.breadcrumb {
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin: 0 0 5px;
+	padding: 0 10px;
+	li {
+		display: inline;
+		list-style: none outside none;
+	}
+}
+
+.paging-current-page {
+	left: -999em;
+	position: absolute;
+}
+
+.breadcrumb-element {
+	&:after {
+		color: $very-light-gray;
+		content: '>';
+		margin-left: 5px;
+	}
+	&:last-child {
+		font-family: $serif;
+		font-style: italic;
+		&:after {
+			content: '';
+		}
+	}
+}
+
+.breadcrumb-refinement {
+	font-family: $serif;
+	font-style: italic;
+	&:after {
+		content: attr(data-divider);
+		font-style: normal;
+	}
+	&:last-of-type {
+		&:after {
+			content: '';
+		}
+	}
+}
+
+.breadcrumb-refinement-value {
+	background-color: rgba($mantis, 0.3);
+	display: inline-block;
+	border-radius: 3px;
+	margin: 0 5px 5px 0;
+	padding: 0 5px;
+}
+
+.breadcrumb-relax {
+	background: none;
+	color: $sangria;
+	font-family: $sans-serif;
+	font-style: normal;
+	padding: 0 0 0 3px;
+}
+
+.breadcrumb-result-text a,
+.breadcrumb .searchphraselink {
+	background: none;
+	color: $pacific-blue;
+	font-family: $serif;
+	font-style: italic;
+	padding: 0;
+}
